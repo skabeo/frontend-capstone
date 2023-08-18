@@ -16,7 +16,7 @@ const LogIn = () => {
 
   useEffect(() => {
     emailRef?.current.focus();
-    if (errorMessage.length > 0) {
+    if (errorMessage.length === 0) {
       setError(errorMessage);
       errorMessage = [];
       // dispatch(resetErrorState());

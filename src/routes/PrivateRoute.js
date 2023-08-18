@@ -1,9 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 const PrivateRoute = ({ children }) => {
-  const accessToken = false;
-  const loading = false;
+  const loading = useSelector((state) => state.session.isLoading);
+  const accessToken = useSelector((state) => state.session.accessToken);
   const navigate = useNavigate();
 
   if (accessToken) {
