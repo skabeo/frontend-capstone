@@ -1,25 +1,25 @@
+/* eslint-disable consistent-return */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useEffect, useRef, useState } from 'react';
-// import { useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { useDispatch, useSelector } from 'react-redux';
+import { loginUser, resetErrorState } from '../../redux/sessions/sessionSlice';
 
 const LogIn = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
-  let errorMessage = [];
-  const [error, setError] = useState('');
+  const [error, setError] = useState([]);
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
-  const errorMsgs = '';
-  // const dispatch = useDispatch();
-  // const loading = false;
+  const dispatch = useDispatch();
+  const errorMessages = useSelector((state) => state.session.errorMessages);
 
   useEffect(() => {
     emailRef?.current.focus();
-    if (errorMessage.length === 0) {
-      setError(errorMessage);
-      errorMessage = [];
-      // dispatch(resetErrorState());
+    if (errorMessages.length > 0) {
+      setError(errorMessages);
+      dispatch(resetErrorState());
     }
   }, []);
 
@@ -30,18 +30,17 @@ const LogIn = () => {
       return setError('Please fill out all fields');
     }
 
-    // const payload = {
-    //   email: emailRef.current.value,
-    //   password: passwordRef.current.value,
-    // };
+    const payload = {
+      email: emailRef.current.value,
+      password: passwordRef.current.value,
+    };
 
-    // await dispatch(loginUser(payload));
+    await dispatch(loginUser(payload));
 
-    if (errorMsgs === 'Invalid Email/Password. Please try again') {
-      setError(errorMsgs);
-      // dispatch(clearErrorAction());
-    } else {
+    if (errorMessages.length === 0) {
       navigate('/');
+    } else {
+      setError(errorMessages);
     }
   };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 const PublicRoute = ({ children }) => {
@@ -14,6 +15,10 @@ const PublicRoute = ({ children }) => {
     navigate('/signin');
   }
   return <p>Something went wrong</p>;
+};
+
+PublicRoute.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default PublicRoute;

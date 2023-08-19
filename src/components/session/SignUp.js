@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable consistent-return */
 import { useRef, useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
-import { signupUser } from '../../redux/sessions/sessionSlice';
+import { signUpUser, resetErrorState } from '../../redux/sessions/sessionSlice';
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -10,7 +12,7 @@ const SignUp = () => {
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
   const nameRef = useRef(null);
-  let errorMessage = [];
+  const errorMessage = [];
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
@@ -21,8 +23,7 @@ const SignUp = () => {
     nameRef.current.focus();
     if (errorMessage.length === 0) {
       setError(errorMessage);
-      errorMessage = [];
-      // dispatch(clearErrorAction());
+      dispatch(resetErrorState());
     }
   }, []);
 
@@ -42,11 +43,10 @@ const SignUp = () => {
       password: passwordRef.current.value,
     };
 
-    await dispatch(signupUser(payload));
+    await dispatch(signUpUser(payload));
 
     if (errorMsgs) {
       setError(errorMsgs);
-      // dispatch(clearErrorAction());
     } else {
       navigate('/');
     }
