@@ -24,3 +24,32 @@
   display: flex;
   gap: 10px;
 }
+
+.homePagePropertiesContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.individualPropertyContainerHP {
+  display: flex;
+  flex-direction: column;
+}
+
+.propertyImageContainerHP {
+  height: 200px;
+  width: 200px;
+}
+
+.propertyTextsContainerHP {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.propertyIconHomePage {
+  height: 200px;
+  width: 200px;
+}
