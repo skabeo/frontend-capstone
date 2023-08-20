@@ -31,6 +31,7 @@
 
 .sidebar {
   width: 20vw;
+  max-width: 100px;
 }
 
 .main-content {

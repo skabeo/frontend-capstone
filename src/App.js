@@ -4,6 +4,8 @@ import Home from './components/Home';
 import LogIn from './components/session/LogIn';
 import Logout from './components/session/LogOut';
 import SignUp from './components/session/SignUp';
+import Reservations from './components/pages/Reservations';
+import Properties from './components/pages/Properties';
 // import LandingPage from './components/LandingPage';
 import PersistLogin from './components/session/PersistLogin';
 import PrivateRoute from './routes/PrivateRoute';
@@ -22,6 +24,22 @@ function App() {
             element={(
               <PrivateRoute>
                 <Home />
+              </PrivateRoute>
+          )}
+          />
+          <Route
+            path="/properties"
+            element={(
+              <PrivateRoute>
+                <Properties />
+              </PrivateRoute>
+          )}
+          />
+          <Route
+            path="/reservations"
+            element={(
+              <PrivateRoute>
+                <Reservations />
               </PrivateRoute>
           )}
           />

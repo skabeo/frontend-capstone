@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import '../styles/sidebar.css'
+import '../styles/sidebar.css';
 
 const Sidebar = () => {
   const accessToken = useSelector((state) => state.session.accessToken);
@@ -27,6 +27,11 @@ const Sidebar = () => {
           {' '}
           {currentUser ? currentUser.name : 'Guest'}
         </p>
+        <div className='menu-links'>
+        <Link to="/">Home</Link>
+        <Link to="/properties">Properties</Link>
+        <Link to="/reservations">Reservations</Link>
+        </div>
       <div className="email-link">
         {sessionLinks}
       </div>
