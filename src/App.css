@@ -12,15 +12,29 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.navbar {
+/* .navbar {
   border: 2px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-}
+} */
 
-.email-link {
+/* .email-link {
   display: flex;
   gap: 10px;
+} */
+
+.App {
+  display: flex;
 }
+
+.sidebar {
+  width: 20vw;
+}
+
+.main-content {
+  width: 80vw;
+}
+
+

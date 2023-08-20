@@ -1,8 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import '../styles/sidebar.css'
 
-const Navbar = () => {
+const Sidebar = () => {
   const accessToken = useSelector((state) => state.session.accessToken);
   const loading = useSelector((state) => state.session.loading);
   const currentUser = useSelector((state) => state.session.currentUser);
@@ -20,18 +21,17 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar">
-      <p>Get more properties</p>
-      <div className="email-link">
-        <p>
+    <div className="sidebar">
+      <p>
           Welcome
           {' '}
           {currentUser ? currentUser.name : 'Guest'}
         </p>
+      <div className="email-link">
         {sessionLinks}
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default Sidebar;

@@ -8,12 +8,13 @@ import SignUp from './components/session/SignUp';
 import PersistLogin from './components/session/PersistLogin';
 import PrivateRoute from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
-import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Sidebar />
+      <div className='main-content'>
       <Routes>
         <Route element={<PersistLogin />}>
           <Route
@@ -50,6 +51,7 @@ function App() {
           />
         </Route>
       </Routes>
+      </div>
     </div>
   );
 }
