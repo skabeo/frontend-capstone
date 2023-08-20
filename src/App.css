@@ -9,6 +9,7 @@
 }
 
 .App {
+  display: flex;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,10 +26,6 @@
   gap: 10px;
 } */
 
-.App {
-  display: flex;
-}
-
 .sidebar {
   width: 20vw;
   max-width: 100px;
@@ -37,5 +34,3 @@
 .main-content {
   width: 80vw;
 }
-
-

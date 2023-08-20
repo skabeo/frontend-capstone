@@ -23,15 +23,15 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <p>
-          Welcome
-          {' '}
-          {currentUser ? currentUser.name : 'Guest'}
-        </p>
-        <div className='menu-links'>
+        Welcome
+        {' '}
+        {currentUser ? currentUser.name : 'Guest'}
+      </p>
+      <div className="menu-links">
         <Link to="/">Home</Link>
         <Link to="/properties">Properties</Link>
         <Link to="/reservations">Reservations</Link>
-        </div>
+      </div>
       <div className="email-link">
         {sessionLinks}
       </div>

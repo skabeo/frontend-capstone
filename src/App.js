@@ -16,59 +16,59 @@ function App() {
   return (
     <div className="App">
       <Sidebar />
-      <div className='main-content'>
-      <Routes>
-        <Route element={<PersistLogin />}>
-          <Route
-            path="/"
-            element={(
-              <PrivateRoute>
-                <Home />
-              </PrivateRoute>
+      <div className="main-content">
+        <Routes>
+          <Route element={<PersistLogin />}>
+            <Route
+              path="/"
+              element={(
+                <PrivateRoute>
+                  <Home />
+                </PrivateRoute>
           )}
-          />
-          <Route
-            path="/properties"
-            element={(
-              <PrivateRoute>
-                <Properties />
-              </PrivateRoute>
+            />
+            <Route
+              path="/properties"
+              element={(
+                <PrivateRoute>
+                  <Properties />
+                </PrivateRoute>
           )}
-          />
-          <Route
-            path="/reservations"
-            element={(
-              <PrivateRoute>
-                <Reservations />
-              </PrivateRoute>
+            />
+            <Route
+              path="/reservations"
+              element={(
+                <PrivateRoute>
+                  <Reservations />
+                </PrivateRoute>
           )}
-          />
-          <Route
-            path="/signout"
-            element={(
-              <PrivateRoute>
-                <Logout />
-              </PrivateRoute>
+            />
+            <Route
+              path="/signout"
+              element={(
+                <PrivateRoute>
+                  <Logout />
+                </PrivateRoute>
           )}
-          />
-          <Route
-            path="/signin"
-            element={(
-              <PublicRoute>
-                <LogIn />
-              </PublicRoute>
+            />
+            <Route
+              path="/signin"
+              element={(
+                <PublicRoute>
+                  <LogIn />
+                </PublicRoute>
           )}
-          />
-          <Route
-            path="/signup"
-            element={(
-              <PublicRoute>
-                <SignUp />
-              </PublicRoute>
+            />
+            <Route
+              path="/signup"
+              element={(
+                <PublicRoute>
+                  <SignUp />
+                </PublicRoute>
           )}
-          />
-        </Route>
-      </Routes>
+            />
+          </Route>
+        </Routes>
       </div>
     </div>
   );
