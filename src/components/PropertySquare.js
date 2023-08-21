@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 export const PropertySquare = (props) => {
   const {
-    name, location, price, image,
+    name, location, price, image, onClick
   } = props;
 
   return (
-    <button type="button" className="individualPropertyContainerHP">
+    <button onClick={onClick} type="button" className="individualPropertyContainerHP">
       <div className="propertyImageContainerHP">
         <img className="propertyIconHomePage" src={image} alt="property" />
       </div>
