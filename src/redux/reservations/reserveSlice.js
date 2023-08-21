@@ -27,21 +27,7 @@ export const createReservation = (accessToken, data) => async () => {
 const reservationSlice = createSlice({
   name: 'reservation',
   initialState,
-  // extraReducers: builder => {
-  //     builder.addCase(createReservation.pending, (state) => {
-  //         state.loading = true
-  //         state.error = ''
-  //     }),
-  //     builder.addCase(createReservation.fulfilled, (state, action) => {
-  //         state.loading = false
-  //         state.error = ''
-  //         state.reservation = action.payload
-  //     }),
-  //     builder.addCase(createReservation.rejected, (state) => {
-  //         state.loading = false
-  //         state.error = 'Failed to reserve'
-  //     })
-  // }
+  reducers: {},
 });
 
 export default reservationSlice.reducer;

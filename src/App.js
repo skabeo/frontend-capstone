@@ -4,7 +4,6 @@ import { Home } from './components/pages/Home';
 import LogIn from './components/session/LogIn';
 import Logout from './components/session/LogOut';
 import SignUp from './components/session/SignUp';
-import Reserve from './components/pages/Reserve';
 import Reservations from './components/pages/Reservations';
 import AddProperties from './components/pages/AddProperties';
 import Delete from './components/pages/Delete';
@@ -40,18 +39,10 @@ function App() {
           )}
             />
             <Route
-              path="/reserve/:id"
-              element={(
-                <PrivateRoute>
-                  <ReserveForm />
-                </PrivateRoute>
-          )}
-            />
-            <Route
               path="/reserve"
               element={(
                 <PrivateRoute>
-                  <Reserve />
+                  <ReserveForm />
                 </PrivateRoute>
           )}
             />

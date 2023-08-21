@@ -23,7 +23,7 @@ const Details = () => {
           </li>
         </ul>
         <button type="button" className="details-reserve">
-          <Link to={`/reserve/${property.id}`} state={property}>Reserve</Link>
+          <Link to="/reserve" state={property}>Reserve</Link>
         </button>
       </div>
     </div>

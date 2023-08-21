@@ -18,7 +18,7 @@ const ReserveForm = () => {
 
   const portfolio = useSelector((state) => state.properties.portfolio);
 
-  const accessToken = 'ZqM30a43rRQZJy57JNiyzA4WGfRnFpSgNCQvvacr4zA';
+  const accessToken = useSelector((state) => state.session.accessToken);
 
   useEffect(() => {
     if (state) {
@@ -31,7 +31,9 @@ const ReserveForm = () => {
     const property = portfolio.find((item) => item.id === propertyId);
 
     const data = {
-      city, date, property,
+      city,
+      date,
+      property,
     };
 
     try {
