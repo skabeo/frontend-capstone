@@ -13,6 +13,7 @@ import PersistLogin from './components/session/PersistLogin';
 import PrivateRoute from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
 import Sidebar from './components/Sidebar';
+import Details from './components/pages/Details';
 
 function App() {
   return (
@@ -26,6 +27,14 @@ function App() {
               element={(
                 <PrivateRoute>
                   <Home />
+                </PrivateRoute>
+          )}
+            />
+            <Route
+              path="/property/:id"
+              element={(
+                <PrivateRoute>
+                  <Details />
                 </PrivateRoute>
           )}
             />
