@@ -1,55 +1,93 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
+import { Home } from './components/pages/Home';
 import LogIn from './components/session/LogIn';
 import Logout from './components/session/LogOut';
 import SignUp from './components/session/SignUp';
-// import LandingPage from './components/LandingPage';
+import Reserve from './components/pages/Reserve';
+import Reservations from './components/pages/Reservations';
+import AddProperties from './components/pages/AddProperties';
+import Delete from './components/pages/Delete';
+
 import PersistLogin from './components/session/PersistLogin';
 import PrivateRoute from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
-import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route element={<PersistLogin />}>
-          <Route
-            path="/"
-            element={(
-              <PrivateRoute>
-                <Home />
-              </PrivateRoute>
+      <Sidebar />
+      <div className="main-content">
+        <Routes>
+          <Route element={<PersistLogin />}>
+            <Route
+              path="/"
+              element={(
+                <PrivateRoute>
+                  <Home />
+                </PrivateRoute>
           )}
-          />
-          <Route
-            path="/signout"
-            element={(
-              <PrivateRoute>
-                <Logout />
-              </PrivateRoute>
+            />
+            <Route
+              path="/reserve"
+              element={(
+                <PrivateRoute>
+                  <Reserve />
+                </PrivateRoute>
           )}
-          />
-          <Route
-            path="/signin"
-            element={(
-              <PublicRoute>
-                <LogIn />
-              </PublicRoute>
+            />
+            <Route
+              path="/reservations"
+              element={(
+                <PrivateRoute>
+                  <Reservations />
+                </PrivateRoute>
           )}
-          />
-          <Route
-            path="/signup"
-            element={(
-              <PublicRoute>
-                <SignUp />
-              </PublicRoute>
+            />
+            <Route
+              path="/add"
+              element={(
+                <PrivateRoute>
+                  <AddProperties />
+                </PrivateRoute>
           )}
-          />
-        </Route>
-      </Routes>
+            />
+            <Route
+              path="/delete"
+              element={(
+                <PrivateRoute>
+                  <Delete />
+                </PrivateRoute>
+          )}
+            />
+            <Route
+              path="/signout"
+              element={(
+                <PrivateRoute>
+                  <Logout />
+                </PrivateRoute>
+          )}
+            />
+            <Route
+              path="/signin"
+              element={(
+                <PublicRoute>
+                  <LogIn />
+                </PublicRoute>
+          )}
+            />
+            <Route
+              path="/signup"
+              element={(
+                <PublicRoute>
+                  <SignUp />
+                </PublicRoute>
+          )}
+            />
+          </Route>
+        </Routes>
+      </div>
     </div>
   );
 }
