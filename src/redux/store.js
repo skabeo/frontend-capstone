@@ -7,7 +7,7 @@ const store = configureStore({
   reducer: {
     properties: propertiesReducer,
     session: sessionReducer,
-    reservations: reservationReducer
+    reservations: reservationReducer,
   },
 });
 

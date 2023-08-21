@@ -1,14 +1,14 @@
 .details-main {
-    display: grid;
-    grid-template-columns: 60% 30%;
-    grid-template-areas: 'img-cont details-cont';
-    justify-content: center;
-    margin: 5rem;
+  display: grid;
+  grid-template-columns: 60% 30%;
+  grid-template-areas: 'img-cont details-cont';
+  justify-content: center;
+  margin: 5rem;
 }
 
 .img-cont img {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .details-cont ul {
@@ -17,13 +17,13 @@
 }
 
 .details-cont li {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .details-cont li:nth-of-type(odd) {
-    background-color: gray;
+  background-color: gray;
 }
 
 .details-reserve {
-    padding: 0.8rem;
+  padding: 0.8rem;
 }

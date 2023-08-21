@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
 import { PropertySquare } from '../PropertySquare';
-import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
   const portfolio = useSelector((state) => state.properties.portfolio);
@@ -14,8 +14,8 @@ export const Home = () => {
   }, [dispatch]);
 
   const switchPage = (property) => {
-    nav(`property/${property.id}`, {state: {property}})
-  }
+    nav(`property/${property.id}`, { state: { property } });
+  };
 
   if (portfolio) {
     return (
