@@ -17,7 +17,7 @@ const Details = () => {
             <li>Price: ${property.price}</li>
         </ul>
         <button type="button" className="details-reserve">
-        <Link to={`/reserve/${property.id}`}>Reserve</Link>
+        <Link to={`/reserve/${property.id}`} state={property}>Reserve</Link>
         </button>
         </div>
         </div>
