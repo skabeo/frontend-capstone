@@ -9,7 +9,7 @@ const initialState = {
 
 export const createReservation = (accessToken, data) => async () => {
   const { property, date, city } = data;
-  const newReservation = { property_id: property, city, date };
+  const newReservation = { property_id: property.id, city, date };
 
   const response = await axios.post(
     'http://127.0.0.1:3000/api/v1/reservations',
@@ -20,7 +20,6 @@ export const createReservation = (accessToken, data) => async () => {
       },
     },
   );
-
   return response.data;
 };
 
