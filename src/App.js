@@ -4,7 +4,6 @@ import { Home } from './components/pages/Home';
 import LogIn from './components/session/LogIn';
 import Logout from './components/session/LogOut';
 import SignUp from './components/session/SignUp';
-import Reserve from './components/pages/Reserve';
 import Reservations from './components/pages/Reservations';
 import AddProperties from './components/pages/AddProperties';
 import Delete from './components/pages/Delete';
@@ -13,6 +12,8 @@ import PersistLogin from './components/session/PersistLogin';
 import PrivateRoute from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
 import Sidebar from './components/Sidebar';
+import Details from './components/pages/Details';
+import ReserveForm from './components/pages/ReserveForm';
 
 function App() {
   return (
@@ -30,10 +31,18 @@ function App() {
           )}
             />
             <Route
+              path="/property/:id"
+              element={(
+                <PrivateRoute>
+                  <Details />
+                </PrivateRoute>
+          )}
+            />
+            <Route
               path="/reserve"
               element={(
                 <PrivateRoute>
-                  <Reserve />
+                  <ReserveForm />
                 </PrivateRoute>
           )}
             />
