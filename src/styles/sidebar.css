@@ -1,0 +1,17 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  row-gap: 70px;
+}
+
+.email-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
