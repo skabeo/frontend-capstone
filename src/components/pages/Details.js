@@ -1,25 +1,26 @@
 import { useLocation } from "react-router-dom";
+import '../../styles/details.css'
 
 const Details = () => {
     const location = useLocation()
     const { property } = location.state
 
     return (
-        <>
-        <div>
+        <div className="details-main">
+        <div className="img-cont">
             <img className="img-details" src={property.image} alt="property" />
         </div>
-        <div>
+        <div className="details-cont">
         <h2>{property.name}</h2>
         <ul>
-            <li>{property.location}</li>
-            <li>{property.price}</li>
+            <li>Location: {property.location}</li>
+            <li>Price: ${property.price}</li>
         </ul>
-        <button type="button">
+        <button type="button" className="details-reserve">
             Reserve
         </button>
         </div>
-        </>
+        </div>
     )
 }
 
