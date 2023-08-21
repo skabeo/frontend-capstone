@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import '../../styles/details.css'
 
 const Details = () => {
@@ -17,7 +17,7 @@ const Details = () => {
             <li>Price: ${property.price}</li>
         </ul>
         <button type="button" className="details-reserve">
-            Reserve
+        <Link to={`/reserve/${property.id}`}>Reserve</Link>
         </button>
         </div>
         </div>
