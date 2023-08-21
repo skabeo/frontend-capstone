@@ -14,6 +14,7 @@ import PrivateRoute from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
 import Sidebar from './components/Sidebar';
 import Details from './components/pages/Details';
+import ReserveForm from './components/pages/ReserveForm';
 
 function App() {
   return (
@@ -35,6 +36,14 @@ function App() {
               element={(
                 <PrivateRoute>
                   <Details />
+                </PrivateRoute>
+          )}
+            />
+            <Route
+              path="/reserve/:id"
+              element={(
+                <PrivateRoute>
+                  <ReserveForm />
                 </PrivateRoute>
           )}
             />
