@@ -17,7 +17,7 @@ const Sidebar = () => {
         <Link to="/reservations">My Reservations</Link>
         <Link to="/add-property">Add property</Link>
         <Link to="/delete">Delete property</Link>
-        <Link to='/signout'>Logout</Link>
+        <Link to="/signout">Logout</Link>
       </div>
     );
   } else if (!accessToken && !loading) {
