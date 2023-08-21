@@ -28,9 +28,11 @@ const Sidebar = () => {
         {currentUser ? currentUser.name : 'Guest'}
       </p>
       <div className="menu-links">
-        <Link to="/">Home</Link>
-        <Link to="/properties">Properties</Link>
-        <Link to="/reservations">Reservations</Link>
+        <Link to="/">Properties</Link>
+        <Link to="/reserve">Reserve property</Link>
+        <Link to="/reservations">My Reservations</Link>
+        <Link to="/add">Add property</Link>
+        <Link to="/delete">Delete</Link>
       </div>
       <div className="email-link">
         {sessionLinks}

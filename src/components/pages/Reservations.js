@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Reservations = () => (
-  <div>Reservations</div>
+  <div>My Reservations</div>
 );
 
 export default Reservations;

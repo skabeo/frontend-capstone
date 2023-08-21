@@ -1,12 +1,14 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
+import { Home } from './components/pages/Home';
 import LogIn from './components/session/LogIn';
 import Logout from './components/session/LogOut';
 import SignUp from './components/session/SignUp';
+import Reserve from './components/pages/Reserve';
 import Reservations from './components/pages/Reservations';
-import Properties from './components/pages/Properties';
-// import LandingPage from './components/LandingPage';
+import AddProperties from './components/pages/AddProperties';
+import Delete from './components/pages/Delete';
+
 import PersistLogin from './components/session/PersistLogin';
 import PrivateRoute from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
@@ -28,10 +30,10 @@ function App() {
           )}
             />
             <Route
-              path="/properties"
+              path="/reserve"
               element={(
                 <PrivateRoute>
-                  <Properties />
+                  <Reserve />
                 </PrivateRoute>
           )}
             />
@@ -40,6 +42,22 @@ function App() {
               element={(
                 <PrivateRoute>
                   <Reservations />
+                </PrivateRoute>
+          )}
+            />
+            <Route
+              path="/add"
+              element={(
+                <PrivateRoute>
+                  <AddProperties />
+                </PrivateRoute>
+          )}
+            />
+            <Route
+              path="/delete"
+              element={(
+                <PrivateRoute>
+                  <Delete />
                 </PrivateRoute>
           )}
             />

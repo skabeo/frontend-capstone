@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchPortfolio } from '../redux/properties/propertiesSlice';
-import { PropertySquare } from '../components/PropertySquare';
+import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
+import { PropertySquare } from '../PropertySquare';
 
 export const Home = () => {
   const portfolio = useSelector((state) => state.properties.portfolio);
