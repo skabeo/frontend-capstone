@@ -55,7 +55,7 @@ function App() {
           )}
             />
             <Route
-              path="/add"
+              path="/add-property"
               element={(
                 <PrivateRoute>
                   <AddProperties />
