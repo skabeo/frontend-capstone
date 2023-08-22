@@ -8,6 +8,8 @@ const ReserveForm = () => {
   const [date, setDate] = useState('');
   const [city, setCity] = useState('');
   const [propertyId, setPropertyId] = useState(-1);
+  const [feedbackMessage, setFeedbackMessage] = useState(null);
+
   const location = useLocation();
   const { state } = location;
   const dispatch = useDispatch();
@@ -38,8 +40,9 @@ const ReserveForm = () => {
 
     try {
       await dispatch(createReservation(accessToken, data));
+      setFeedbackMessage('Property added successfully');
     } catch (error) {
-      console.log(error);
+      setFeedbackMessage('Please fill all fields');
     }
   };
 
@@ -71,6 +74,7 @@ const ReserveForm = () => {
         />
         <button type="submit" onClick={handleSubmit}>Reserve</button>
       </form>
+      {feedbackMessage && <p>{feedbackMessage}</p>}
     </div>
   );
 };

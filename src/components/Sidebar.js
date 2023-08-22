@@ -10,7 +10,16 @@ const Sidebar = () => {
 
   let sessionLinks;
   if (accessToken) {
-    sessionLinks = <Link to="/signout">Logout</Link>;
+    sessionLinks = (
+      <div className="menu-links">
+        <Link to="/">Properties</Link>
+        <Link to="/reserve">Reserve property</Link>
+        <Link to="/reservations">My Reservations</Link>
+        <Link to="/add-property">Add property</Link>
+        <Link to="/delete">Delete property</Link>
+        <Link to="/signout">Logout</Link>
+      </div>
+    );
   } else if (!accessToken && !loading) {
     sessionLinks = (
       <>
@@ -27,13 +36,6 @@ const Sidebar = () => {
         {' '}
         {currentUser ? currentUser.name : 'Guest'}
       </p>
-      <div className="menu-links">
-        <Link to="/">Properties</Link>
-        <Link to="/reserve">Reserve property</Link>
-        <Link to="/reservations">My Reservations</Link>
-        <Link to="/add">Add property</Link>
-        <Link to="/delete">Delete</Link>
-      </div>
       <div className="email-link">
         {sessionLinks}
       </div>

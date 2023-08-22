@@ -8,27 +8,13 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-left: 250px;
+}
+
 .App {
   display: flex;
   font-family: 'Montserrat', sans-serif;
-}
-
-/* .navbar {
-  border: 2px solid;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-} */
-
-/* .email-link {
-  display: flex;
-  gap: 10px;
-} */
-
-.sidebar {
-  width: 20vw;
-  max-width: 100px;
 }
 
 .main-content {
