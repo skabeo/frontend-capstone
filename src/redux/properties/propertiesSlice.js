@@ -32,6 +32,16 @@ export const createProperty = (accessToken, data) => async () => {
   }
 };
 
+export const deleteProperty = createAsyncThunk('delete/property', async (propertyId) => {
+  try {
+    const response = await axios.delete(`${BASE_URL}/properties/${propertyId}`);
+    return propertyId; // Return the ID of the deleted property
+  } catch (error) {
+    throw error;
+  }
+});
+
+
 const propertiesSlice = createSlice({
   name: 'properties',
   initialState,
