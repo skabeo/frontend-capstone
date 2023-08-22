@@ -6,7 +6,8 @@ export const DeleteSquare = (props) => {
     name, location, price, image, onClick,
   } = props;
 
-  return (<div className='wrapper'>
+  return (
+    <div className="wrapper">
 
       <div className="propertyImageContainerHP">
         <img className="propertyIconHomePage" src={image} alt="property" />

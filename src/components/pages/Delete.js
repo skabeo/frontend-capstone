@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
-import DeleteSquare from '../DeleteSquare';
-import { deleteProperty } from '../../redux/properties/propertiesSlice';
+import { fetchPortfolio, deleteProperty } from '../../redux/properties/propertiesSlice';
+import { DeleteSquare } from '../DeleteSquare';
 import '../../styles/delete.css';
 
 export const Delete = () => {
@@ -16,8 +15,6 @@ export const Delete = () => {
   const handleDelete = (propertyId) => {
     dispatch(deleteProperty(propertyId));
   };
-
-
 
   if (portfolio) {
     return (

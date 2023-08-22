@@ -33,14 +33,9 @@ export const createProperty = (accessToken, data) => async () => {
 };
 
 export const deleteProperty = createAsyncThunk('delete/property', async (propertyId) => {
-  try {
-    const response = await axios.delete(`${BASE_URL}/properties/${propertyId}`);
-    return propertyId;
-  } catch (error) {
-    throw error;
-  }
+  await axios.delete(`${BASE_URL}/properties/${propertyId}`);
+  return propertyId;
 });
-
 
 const propertiesSlice = createSlice({
   name: 'properties',
@@ -64,7 +59,7 @@ const propertiesSlice = createSlice({
     });
     builder.addCase(deleteProperty.fulfilled, (state, action) => {
       // Remove the deleted property from the state
-      state.portfolio = state.portfolio.filter(property => property.id !== action.payload);
+      state.portfolio = state.portfolio.filter((property) => property.id !== action.payload);
     });
 
     builder.addCase(deleteProperty.rejected, (state, action) => {
