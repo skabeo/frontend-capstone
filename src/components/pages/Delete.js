@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
 import { PropertySquare } from '../PropertySquare';
 import DeleteSquare from '../DeleteSquare';
+import { deleteProperty } from '../../redux/properties/propertiesSlice';
 
 export const Delete = () => {
   const portfolio = useSelector((state) => state.properties.portfolio);

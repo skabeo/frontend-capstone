@@ -58,6 +58,19 @@ const propertiesSlice = createSlice({
       state.isLoading = false;
       state.error = action.payload.errors;
     });
+    builder.addCase(deleteProperty.pending, (state) => {
+      state.isLoading = true;
+      state.error = false;
+    });
+    builder.addCase(deleteProperty.fulfilled, (state, action) => {
+      // Remove the deleted property from the state
+      state.portfolio = state.portfolio.filter(property => property.id !== action.payload);
+    });
+
+    builder.addCase(deleteProperty.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.payload.errors;
+    });
   },
 });
 
