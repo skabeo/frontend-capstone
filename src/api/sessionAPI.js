@@ -5,8 +5,8 @@ const SIGNUP_URL = '/users';
 const LOGOUT_URL = '/oauth/revoke';
 const CURRENT_USER_URL = '/users/me';
 
-const CLIENT_ID = 'l-V5cgU4-1_izHlPa2OpEN3c6zmABb73IkfrQQ9UI0U';
-const CLIENT_SECRET = 'Obu_dGj8piC2VcWe0WYhMd10AGaLXznoQTAnLsRHyZk';
+const CLIENT_ID = 'Px7wX0KGXjVdW3I33wWWbvC-g-nM_YgMB7fkY2jyVSQ';
+const CLIENT_SECRET = 'mfinIE__6L5ZmRKdhm1wu2gUqA5wq-TFLHuyr0FZiW0';
 
 export const createUserWithEmailAndPassword = async (name, email, password) => {
   const data = {
