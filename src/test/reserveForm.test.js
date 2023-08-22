@@ -6,17 +6,16 @@ import ReserveForm from '../components/pages/ReserveForm';
 import store from '../redux/store';
 import '@testing-library/jest-dom/extend-expect';
 
-
-  it('renders ReserveForm correctly', () => {
-    render(
-        <Router>
-    <Provider store={store}>
+it('renders ReserveForm correctly', () => {
+  render(
+    <Router>
+      <Provider store={store}>
         <ReserveForm />
       </Provider>
-        </Router>
-    );
+    </Router>,
+  );
 
-    expect(screen.getByText('Reserve Form')).toBeInTheDocument();
-    expect(screen.getByText('Choose a Property')).toBeInTheDocument();
-    expect(screen.getByText('Reserve')).toBeInTheDocument();
-  });
+  expect(screen.getByText('Reserve Form')).toBeInTheDocument();
+  expect(screen.getByText('Choose a Property')).toBeInTheDocument();
+  expect(screen.getByText('Reserve')).toBeInTheDocument();
+});
