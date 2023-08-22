@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
-import { PropertySquare } from '../PropertySquare';
 import DeleteSquare from '../DeleteSquare';
 import { deleteProperty } from '../../redux/properties/propertiesSlice';
+import '../../styles/delete.css';
 
 export const Delete = () => {
   const portfolio = useSelector((state) => state.properties.portfolio);
@@ -15,7 +14,7 @@ export const Delete = () => {
   }, [dispatch]);
 
   const handleDelete = (propertyId) => {
-    dispatch(deleteProperty(propertyId)); // Dispatch the deleteProperty action
+    dispatch(deleteProperty(propertyId));
   };
 
 
@@ -28,7 +27,6 @@ export const Delete = () => {
           <p>Welcome to the page where you can navigate through the properties and remove them</p>
           <div className="homePagePropertiesContainer">
             {portfolio.length ? portfolio.map((property) => (
-                <>
               <DeleteSquare
                 key={property.id}
                 name={property.name}
@@ -37,8 +35,6 @@ export const Delete = () => {
                 image={property.image}
                 onClick={() => handleDelete(property.id)}
               />
-              </>
-
             ))
               : <p>Nothing to show</p>}
           </div>
@@ -49,8 +45,9 @@ export const Delete = () => {
   return (
     <div>
       <div>
-        <h1>Home Page</h1>
-        <p>Welcome to Get more properties</p>
+        <h1>Remove properties</h1>
+        <p>Welcome to the page where you can navigate through the properties and remove them</p>
+        <p>Nothing here for now! Check the App property link to add new properties</p>
       </div>
     </div>
   );

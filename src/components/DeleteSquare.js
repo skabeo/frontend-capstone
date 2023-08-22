@@ -6,7 +6,7 @@ export const DeleteSquare = (props) => {
     name, location, price, image, onClick,
   } = props;
 
-  return (<>
+  return (<div className='wrapper'>
 
       <div className="propertyImageContainerHP">
         <img className="propertyIconHomePage" src={image} alt="property" />
@@ -20,7 +20,7 @@ export const DeleteSquare = (props) => {
         </div>
       </div>
       <button onClick={onClick} type="button" className="individualPropertyContainerHP">Delete</button>
-    </>
+    </div>
   );
 };
 
