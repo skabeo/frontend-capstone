@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchReservations } from '../../redux/reservations/reserveSlice';
 
 const Reservations = () => {
-  const reservations = useSelector(state => state.reservations.reservations);
-  const accessToken = useSelector(state => state.session.accessToken);
-  const currentUser = useSelector(state => state.session.currentUser);
+  const reservations = useSelector((state) => state.reservations.reservations);
+  const accessToken = useSelector((state) => state.session.accessToken);
+  const currentUser = useSelector((state) => state.session.currentUser);
 
   const dispatch = useDispatch();
 
@@ -18,11 +18,17 @@ const Reservations = () => {
       <h1>My Reservations</h1>
       <div className="homePagePropertiesContainer">
         {reservations.length ? (
-          reservations.map(reserve => (
+          reservations.map((reserve) => (
             <div key={reserve.id}>
               <h3>{currentUser.name}</h3>
-              <p>Date of Visit: {reserve.date_of_visit}</p>
-              <p>City: {reserve.city}</p>
+              <p>
+                Date of Visit:
+                {reserve.date_of_visit}
+              </p>
+              <p>
+                City:
+                {reserve.city}
+              </p>
             </div>
           ))
         ) : (
