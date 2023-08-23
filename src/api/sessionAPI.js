@@ -7,6 +7,8 @@ const CURRENT_USER_URL = '/users/me';
 
 const CLIENT_ID = 'S-XnK_MTFiNwmeRtWpYK_tMdpvcKBFcCSGYkKQtmQ3U';
 const CLIENT_SECRET = '_bxspS8lAaMrGYANEA3qThk-PL2iuGvkTmsdBV_dkQM';
+// const CLIENT_ID = 'Px7wX0KGXjVdW3I33wWWbvC-g-nM_YgMB7fkY2jyVSQ';
+// const CLIENT_SECRET = 'mfinIE__6L5ZmRKdhm1wu2gUqA5wq-TFLHuyr0FZiW0';
 
 export const createUserWithEmailAndPassword = async (name, email, password) => {
   const data = {

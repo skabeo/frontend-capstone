@@ -6,7 +6,7 @@ import Logout from './components/session/LogOut';
 import SignUp from './components/session/SignUp';
 import Reservations from './components/pages/Reservations';
 import AddProperties from './components/pages/AddProperties';
-import Delete from './components/pages/Delete';
+import { Delete } from './components/pages/Delete';
 
 import PersistLogin from './components/session/PersistLogin';
 import PrivateRoute from './routes/PrivateRoute';
