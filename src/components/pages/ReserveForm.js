@@ -44,9 +44,9 @@ const ReserveForm = () => {
     } catch (error) {
       setFeedbackMessage('Please fill all fields');
     }
-    setCity('')
-    setDate('')
-    setPropertyId('')
+    setCity('');
+    setDate('');
+    setPropertyId('');
   };
 
   return (
