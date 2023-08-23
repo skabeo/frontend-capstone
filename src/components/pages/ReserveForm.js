@@ -40,10 +40,13 @@ const ReserveForm = () => {
 
     try {
       await dispatch(createReservation(accessToken, data));
-      setFeedbackMessage('Property added successfully');
+      setFeedbackMessage('Reservation added successfully');
     } catch (error) {
       setFeedbackMessage('Please fill all fields');
     }
+    setCity('');
+    setDate('');
+    setPropertyId('');
   };
 
   return (
@@ -57,6 +60,7 @@ const ReserveForm = () => {
         >
           {state && <option value={state.id} defaultValue>{state.name}</option>}
           {!state && <option value="" defaultValue>Choose a Property</option>}
+
           {!state && portfolio.map((item) => (
             <option key={item.id} value={item.id}>{item.name}</option>
           ))}
