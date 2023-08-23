@@ -5,10 +5,10 @@ const SIGNUP_URL = '/users';
 const LOGOUT_URL = '/oauth/revoke';
 const CURRENT_USER_URL = '/users/me';
 
-//const CLIENT_ID = 'S-XnK_MTFiNwmeRtWpYK_tMdpvcKBFcCSGYkKQtmQ3U';
-//const CLIENT_SECRET = '_bxspS8lAaMrGYANEA3qThk-PL2iuGvkTmsdBV_dkQM';
-//const CLIENT_ID = 'Px7wX0KGXjVdW3I33wWWbvC-g-nM_YgMB7fkY2jyVSQ';
-//const CLIENT_SECRET = 'mfinIE__6L5ZmRKdhm1wu2gUqA5wq-TFLHuyr0FZiW0';
+// const CLIENT_ID = 'S-XnK_MTFiNwmeRtWpYK_tMdpvcKBFcCSGYkKQtmQ3U';
+// const CLIENT_SECRET = '_bxspS8lAaMrGYANEA3qThk-PL2iuGvkTmsdBV_dkQM';
+// const CLIENT_ID = 'Px7wX0KGXjVdW3I33wWWbvC-g-nM_YgMB7fkY2jyVSQ';
+// const CLIENT_SECRET = 'mfinIE__6L5ZmRKdhm1wu2gUqA5wq-TFLHuyr0FZiW0';
 const CLIENT_ID = 'NVPadEE-ot1ZlxfyNX6ZyaFJu0Hr7kSWlKSSFbySvBU';
 const CLIENT_SECRET = 'J0Kx8vbUg3LavQG2lShmMDQTVcXJfRMTFKgtZ50ODW4';
 
