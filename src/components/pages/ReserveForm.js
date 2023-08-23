@@ -57,7 +57,7 @@ const ReserveForm = () => {
         >
           {state && <option value={state.id} defaultValue>{state.name}</option>}
           {!state && <option value="" defaultValue>Choose a Property</option>}
-          {!state && property.map((item) => (
+          {!state && portfolio.map((item) => (
             <option key={item.id} value={item.id}>{item.name}</option>
           ))}
         </select>
