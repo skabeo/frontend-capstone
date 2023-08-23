@@ -30,7 +30,7 @@ const ReserveForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const property = portfolio.find((item) => item.id == propertyId);
+    const property = portfolio.find((item) => item.id === parseInt(propertyId,10));
 
     const data = {
       city,
