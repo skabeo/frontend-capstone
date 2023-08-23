@@ -30,7 +30,7 @@ const ReserveForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const property = portfolio.find((item) => item.id === propertyId);
+    const property = portfolio.find((item) => item.id === parseInt(propertyId, 10));
 
     const data = {
       city,
@@ -60,6 +60,10 @@ const ReserveForm = () => {
         >
           {state && <option value={state.id} defaultValue>{state.name}</option>}
           {!state && <option value="" defaultValue>Choose a Property</option>}
+
+          {!state && portfolio.map((item) => (
+            <option key={item.id} value={item.id}>{item.name}</option>
+          ))}
         </select>
         <input
           type="date"
