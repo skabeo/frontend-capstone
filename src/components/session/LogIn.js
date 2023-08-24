@@ -97,7 +97,7 @@ const LogIn = () => {
         <div className="optional-container">
           <h3>Sign up to create new account</h3>
           <Link to="/signup">
-            <button className="sign-up" type="button">Sign Up</button>
+            <button className="sign-up" type="button">Sign in</button>
           </Link>
         </div>
       </div>
