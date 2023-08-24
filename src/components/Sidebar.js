@@ -22,9 +22,7 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar large-screens">
-      <div className="email-link">
         {sessionLinks}
-      </div>
     </div>
   );
 };
