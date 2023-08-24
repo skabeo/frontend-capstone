@@ -16,6 +16,13 @@ body {
 
 /* Main app style for implementing the sidebar */
 
+/* small screens */
+@media (max-width: 768px) {
+  .App {
+    margin-top: 90px;
+  }
+  }
+
 .App {
   display: flex;
 }

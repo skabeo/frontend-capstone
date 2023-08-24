@@ -1,5 +1,5 @@
 
-/* Large screens */
+/* small screens */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
