@@ -18,7 +18,7 @@ import ReserveForm from './components/pages/ReserveForm';
 function App() {
   return (
     <div className="App">
-      <div className="sidebar-cont"><Sidebar /></div>
+      <Sidebar />
       <div className="main-content">
         <Routes>
           <Route element={<PersistLogin />}>

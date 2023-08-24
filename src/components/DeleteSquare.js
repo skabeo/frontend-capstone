@@ -8,16 +8,16 @@ export const DeleteSquare = (props) => {
 
   return (
     <div className="wrapper">
-        <img className="propertyIconHomePage" src={image} alt="property" />
-      <div className="propertyTextsContainerHP">
+        <img className="propertyIcon" src={image} alt="property" />
+      <div className="propertyDetails">
         <h4>{name}</h4>
         <h4>{location}</h4>
-        <div className="textRow">
+        <div className="price">
           <span>$</span>
           <span>{price}</span>
         </div>
       </div>
-      <button onClick={onClick} type="button" className="individualPropertyContainerHP">Delete</button>
+      <button onClick={onClick} type="button" className="del-btn">Delete</button>
     </div>
   );
 };

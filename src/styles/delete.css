@@ -1,29 +1,38 @@
-
+/* Add this to your existing CSS file */
 .wrapper {
+  border: 1px solid #612ace;
+  padding: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  gap: 10px;
-  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
 
-.individualPropertyContainerHP {
-  display: flex;
-  flex-direction: column;
+.propertyIcon {
+  max-width: 100%;
+  height: auto;
 }
 
-.propertyImageContainerHP {
-  height: 200px;
-  width: 200px;
+
+
+/* Add this to your existing CSS file */
+.homePagePropertiesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* For large screens (3 columns) */
+  gap: 20px; /* Gap between grid items */
 }
 
-.propertyTextsContainerHP {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+/* For medium screens, use 2 columns */
+@media (max-width: 1200px) {
+  .homePagePropertiesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.propertyIconHomePage {
-  height: 200px;
-  width: 200px;
+/* For small screens, use a single column */
+@media (max-width: 768px) {
+  .homePagePropertiesContainer {
+    grid-template-columns: 1fr;
+  }
 }

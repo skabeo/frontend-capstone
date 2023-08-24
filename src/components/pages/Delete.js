@@ -22,7 +22,7 @@ export const Delete = () => {
         <div>
           <h1>Remove properties</h1>
           <p>Welcome to the page where you can navigate through the properties and remove them</p>
-          <div className="homePagePropertiesContainer">
+          <div className="delPagePropertiesContainer">
             {portfolio.length ? portfolio.map((property) => (
               <DeleteSquare
                 key={property.id}
