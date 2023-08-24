@@ -1,4 +1,10 @@
 /* Add this to your existing CSS file */
+.delPage-title {
+  font-size: 24px;
+  color: #612ace;
+  margin-bottom: 10px;
+}
+
 .wrapper {
   border: 1px solid #612ace;
   border-radius: 10px;
