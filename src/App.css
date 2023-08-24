@@ -18,4 +18,7 @@ body {
 
 .App {
   margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
 }
