@@ -86,7 +86,7 @@ const LogIn = () => {
                 {showPassword ? <FaEye /> : <FaEyeSlash />}
               </button>
             </div>
-            <button type="button" className="submit">Submit</button>
+            <button type="submit" className="submit">Submit</button>
           </form>
         </div>
         <div className="horizontal-line-container">
@@ -97,7 +97,7 @@ const LogIn = () => {
         <div className="optional-container">
           <h3>Sign up to create new account</h3>
           <Link to="/signup">
-            <button className="sign-up" type="button">Sign in</button>
+            <button className="sign-up" type="button">Sign up</button>
           </Link>
         </div>
       </div>
