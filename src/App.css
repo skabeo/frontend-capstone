@@ -18,12 +18,10 @@ body {
 
 .App {
   display: flex;
-}
-
-.sidebar {
-  position: absolute;
+  column-gap: 2px;
 }
 
 .main-content {
-  position: absolute;
+  width: 80vw;
 }
+
