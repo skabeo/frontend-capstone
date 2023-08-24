@@ -1,6 +1,4 @@
 
-
-
   /* Large screens */
   @media (max-width: 768px) {
     .hamburger {
@@ -43,6 +41,7 @@
         top: 0;
         width: 100%;
         z-index: 9;
+        margin-bottom: 20px;
       }
 
       .nav-links {
