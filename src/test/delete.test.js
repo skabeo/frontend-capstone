@@ -7,7 +7,7 @@ import Delete from '../components/pages/Delete';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('Delete page', () => {
-  test('Render list of properties with delte buttons', () => {
+  test('Render list of properties with delete buttons', () => {
     render(
       <Router>
         <Provider store={store}>
@@ -17,5 +17,8 @@ describe('Delete page', () => {
     );
     const pageTitle = screen.getByText('Remove properties');
     expect(pageTitle).toBeInTheDocument();
+
+    const displaymsg = screen.getByText('Nothing to show');
+    expect(displaymsg).toBeInTheDocument();
   });
 });
