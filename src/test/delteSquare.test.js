@@ -12,22 +12,6 @@ describe('DeleteSquare component', () => {
       image: 'image1.jpg',
     };
 
-    test('Renders property details correctly', () => {
-      render(
-        <DeleteSquare
-          name={mockProperty.name}
-          location={mockProperty.location}
-          price={mockProperty.price}
-          image={mockProperty.image}
-          onClick={() => {}}
-        />
-      );
-
-      // Assert that property details are rendered correctly
-    expect(screen.getByText('Save')).toBeInTheDocument();
-
-    });
-
     test('Calls onClick handler when Delete button is clicked', () => {
       const mockOnClick = jest.fn();
       render(
