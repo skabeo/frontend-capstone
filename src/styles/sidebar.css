@@ -4,15 +4,8 @@
   height: 100vh;
   border-right: 2px solid;
   padding: 20px;
-}
-
-.email-link {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
-.menu-links {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
