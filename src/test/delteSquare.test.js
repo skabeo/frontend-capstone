@@ -24,14 +24,8 @@ describe('DeleteSquare component', () => {
       );
 
       // Assert that property details are rendered correctly
-    //   const nameElement = screen.getByText(mockProperty.name);
-    //   const locationElement = screen.getByText(mockProperty.location);
-
     expect(screen.getByText('Save')).toBeInTheDocument();
 
-    //   expect(nameElement).toBeInTheDocument();
-    //   expect(locationElement).toBeInTheDocument();
-    //   expect(imageElement).toBeInTheDocument();
     });
 
     test('Calls onClick handler when Delete button is clicked', () => {
