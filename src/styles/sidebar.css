@@ -36,6 +36,21 @@
   font-weight: 700;
 }
 
+.session-btn {
+  border: 2px solid #8a4fff;
+  width: 18vw;
+  height: 45px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.session-btn:hover {
+  background-color: #e28181;
+  color: #ffffff;
+  font-size: smaller;
+}
+
 /* Small screens */
 @media (max-width: 768px) {
   /* Your CSS styles for small screens */
