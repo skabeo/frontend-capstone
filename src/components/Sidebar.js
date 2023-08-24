@@ -9,7 +9,7 @@ const Sidebar = () => {
   let sessionLinks;
   if (accessToken) {
     sessionLinks = (
-      <div className="menu-links">
+      <div className="menu-links large-screens">
         <Link to="/">Properties</Link>
         <Link to="/reserve">Reserve property</Link>
         <Link to="/reservations">My Reservations</Link>
@@ -21,7 +21,7 @@ const Sidebar = () => {
   }
 
   return (
-    <div className="sidebar">
+    <div className="sidebar large-screens">
       <div className="email-link">
         {sessionLinks}
       </div>
