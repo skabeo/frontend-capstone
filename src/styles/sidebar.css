@@ -1,8 +1,9 @@
 .sidebar {
+  position: fixed;
   width: 20vw;
+  height: 100vh;
   border-right: 2px solid;
   padding: 20px;
-  background-color: blue;
 }
 
 .email-link {

@@ -18,10 +18,10 @@ body {
 
 .App {
   display: flex;
-  column-gap: 2px;
 }
 
 .main-content {
   width: 80vw;
+  margin-left: 20vw;
 }
 
