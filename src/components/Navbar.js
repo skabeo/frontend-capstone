@@ -29,9 +29,9 @@ const Navbar = () => {
     <div className={`nav-container ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="email-link">
         <button className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <span className="bar" />
+          <span className="bar" />
+          <span className="bar" />
         </button>
         {sessionLinks}
       </div>
