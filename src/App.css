@@ -9,43 +9,5 @@
 }
 
 body {
-  padding-left: 250px;
-}
-
-.App {
-  display: flex;
   font-family: 'Montserrat', sans-serif;
-}
-
-.main-content {
-  width: 80vw;
-}
-
-.homePagePropertiesContainer {
-  display: flex;
-  flex-direction: row;
-  margin: 50px;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-.individualPropertyContainerHP {
-  display: flex;
-  flex-direction: column;
-}
-
-.propertyImageContainerHP {
-  height: 200px;
-  width: 200px;
-}
-
-.propertyTextsContainerHP {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
-
-.propertyIconHomePage {
-  height: 200px;
-  width: 200px;
 }
