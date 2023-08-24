@@ -17,7 +17,7 @@
 
 
 /* Add this to your existing CSS file */
-.homePagePropertiesContainer {
+.delPagePropertiesContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* For large screens (3 columns) */
   gap: 20px; /* Gap between grid items */
@@ -25,14 +25,14 @@
 
 /* For medium screens, use 2 columns */
 @media (max-width: 1200px) {
-  .homePagePropertiesContainer {
+  .delPagePropertiesContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* For small screens, use a single column */
 @media (max-width: 768px) {
-  .homePagePropertiesContainer {
+  .delPagePropertiesContainer {
     grid-template-columns: 1fr;
   }
 }
