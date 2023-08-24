@@ -8,10 +8,7 @@ export const DeleteSquare = (props) => {
 
   return (
     <div className="wrapper">
-
-      <div className="propertyImageContainerHP">
         <img className="propertyIconHomePage" src={image} alt="property" />
-      </div>
       <div className="propertyTextsContainerHP">
         <h4>{name}</h4>
         <h4>{location}</h4>
