@@ -18,6 +18,13 @@
   margin-top: 10px;
 }
 
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 
 /* Add this to your existing CSS file */
 .delPagePropertiesContainer {
