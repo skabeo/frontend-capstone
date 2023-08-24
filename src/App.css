@@ -23,20 +23,17 @@ body {
   }
 
   .main-content {
-
     margin-left: 15px;
   }
-  }
+}
 
-  @media (min-width: 769px) {
-    .main-content {
-      width: 80vw;
-      margin-left: 20vw;
-    }
-    }
+@media (min-width: 769px) {
+  .main-content {
+    width: 80vw;
+    margin-left: 20vw;
+  }
+}
 
 .App {
   display: flex;
 }
-
-
