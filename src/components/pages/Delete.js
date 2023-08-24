@@ -32,7 +32,7 @@ export const Delete = () => {
                 onClick={() => handleDelete(property.id)}
               />
             ))
-              : <p>Nothing to show</p>}
+              : <p className='delPage-msg'>Nothing to show</p>}
           </div>
       </div>
     );

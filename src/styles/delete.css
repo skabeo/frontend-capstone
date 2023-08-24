@@ -2,7 +2,14 @@
 .delPage-title {
   font-size: 24px;
   color: #612ace;
+  text-align: center;
   margin-bottom: 10px;
+}
+
+.delPage-msg {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .wrapper {
