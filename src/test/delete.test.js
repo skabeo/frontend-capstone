@@ -21,5 +21,4 @@ describe('Delete page', () => {
     const displaymsg = screen.getByText('Nothing to show');
     expect(displaymsg).toBeInTheDocument();
   });
-
 });
