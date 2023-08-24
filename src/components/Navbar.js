@@ -14,7 +14,7 @@ const Navbar = () => {
   let sessionLinks;
   if (accessToken) {
     sessionLinks = (
-      <div className={`nav-links small-screen ${isMenuOpen ? 'open' : ''}`}>
+      <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
         <Link to="/" onClick={toggleMenu}>Properties</Link>
         <Link to="/reserve" onClick={toggleMenu}>Reserve property</Link>
         <Link to="/reservations" onClick={toggleMenu}>My Reservations</Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`nav-container ${isMenuOpen ? 'menu-open' : ''}`}>
+    <div className={`nav-container small-screen ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="email-link">
         <button type="button" className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <span className="bar" />
