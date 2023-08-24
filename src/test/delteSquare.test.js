@@ -27,7 +27,7 @@ describe('DeleteSquare component', () => {
     //   const nameElement = screen.getByText(mockProperty.name);
     //   const locationElement = screen.getByText(mockProperty.location);
 
-      const imageElement = screen.getByAltText('property');
+    expect(screen.getByText('Save')).toBeInTheDocument();
 
     //   expect(nameElement).toBeInTheDocument();
     //   expect(locationElement).toBeInTheDocument();
