@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
 import store from '../redux/store';
-import Delete from '../components/pages/Delete';
+import { Delete } from '../components/pages/Delete';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('Delete page', () => {
