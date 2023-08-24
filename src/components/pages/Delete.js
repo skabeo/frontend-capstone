@@ -19,9 +19,8 @@ export const Delete = () => {
   if (portfolio) {
     return (
       <div>
-        <div>
-          <h1>Remove properties</h1>
-          <p>Welcome to the page where you can navigate through the properties and remove them</p>
+          <h1 className='delPage-title'>Remove properties</h1>
+          <p className='delPage-msg'>Welcome to the page where you can navigate through the properties and remove them</p>
           <div className="delPagePropertiesContainer">
             {portfolio.length ? portfolio.map((property) => (
               <DeleteSquare
@@ -35,16 +34,15 @@ export const Delete = () => {
             ))
               : <p>Nothing to show</p>}
           </div>
-        </div>
       </div>
     );
   }
   return (
     <div>
       <div>
-        <h1>Remove properties</h1>
-        <p>Welcome to the page where you can navigate through the properties and remove them</p>
-        <p>Nothing here for now! Check the App property link to add new properties</p>
+        <h1 className='delPage-title'>Remove properties</h1>
+        <p className='delPage-msg'>Welcome to the page where you can navigate through the properties and remove them</p>
+        <p className='delPage-msg'>Nothing here for now! Check the App property link to add new properties</p>
       </div>
     </div>
   );
