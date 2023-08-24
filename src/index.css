@@ -26,7 +26,6 @@ code {
     monospace;
 }
 
-
 /* Small screens */
 @media (max-width: 768px) {
   /* Your CSS styles for small screens */
@@ -34,7 +33,6 @@ code {
     display: none;
   }
 }
-
 
 /* Medium screens */
 @media (min-width: 769px) and (max-width: 1200px) {
