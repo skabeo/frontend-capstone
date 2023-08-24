@@ -25,6 +25,14 @@
   margin-top: 10px;
 }
 
+.del-btn {
+  background-color: #612ace;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
 
 /* Add this to your existing CSS file */
 .delPagePropertiesContainer {
