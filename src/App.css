@@ -17,8 +17,13 @@ body {
 /* Main app style for implementing the sidebar */
 
 .App {
-  margin-top: 90px;
   display: flex;
-  flex-direction: row;
-  column-gap: 10px;
+}
+
+.sidebar {
+  position: absolute;
+}
+
+.main-content {
+  position: absolute;
 }
