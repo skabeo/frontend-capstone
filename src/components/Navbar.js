@@ -24,19 +24,20 @@ const Navbar = () => {
       </div>
     );
     return (
-        <div className={`nav-container small-screen ${isMenuOpen ? 'menu-open' : ''}`}>
-          <div className="nav-elements">
-            <button type="button" className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-              <span className="bar" />
-              <span className="bar" />
-              <span className="bar" />
-            </button>
-            {sessionLinks}
-          </div>
+      <div className={`nav-container small-screen ${isMenuOpen ? 'menu-open' : ''}`}>
+        <div className="nav-elements">
+          <button type="button" className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+            <span className="bar" />
+            <span className="bar" />
+            <span className="bar" />
+          </button>
+          {sessionLinks}
         </div>
-      );
+      </div>
+    );
   }
 
+  return null;
 };
 
 export default Navbar;
