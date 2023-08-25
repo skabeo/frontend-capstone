@@ -20,7 +20,11 @@ export const PropertySquare = (props) => {
         <h4 className="secondaryText">****************</h4>
         <h5 className="secondaryText">{description}</h5>
       </button>
-      
+      <div className="iconsContainer">
+        <div className="smIcon1">        </div>
+        <div className="smIcon2">        </div>
+        <div className="smIcon3">        </div>
+      </div>
       <br />
       <br />
     </div>
