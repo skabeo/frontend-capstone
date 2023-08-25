@@ -47,3 +47,8 @@
     align-items: center;
     border: none;
  }
+
+ .react-multi-carousel-item--active {
+    display: flex;
+    justify-content: center;
+ }
