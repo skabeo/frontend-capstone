@@ -42,7 +42,13 @@ export const Home = () => {
   return (
     <div className="homePageContainer">
       <div className="homeTextsContainer">
-
+        <h1>LATEST PROPERTIES</h1>
+        <p className="secondaryText">Please select a property to visit</p>
+        <br />
+        <br />
+        <p className="secondaryText">************************</p>
+        <br />
+        <br />
       </div>
 
       <Carousel
