@@ -33,8 +33,6 @@ export const PropertySquare = (props) => {
 
 PropertySquare.propTypes = {
   name: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
