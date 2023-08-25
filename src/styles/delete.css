@@ -1,29 +1,118 @@
 
+.delete-component {
+  padding: 10px;
+}
+
+.delPagePropertiesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.delPage-title {
+  font-size: 24px;
+  color: #612ace;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.delPage-msg {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin: 20px;
   gap: 10px;
-  flex-wrap: wrap;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-.individualPropertyContainerHP {
+.propertyIcon {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.propertyDetails {
+  padding: 10px;
+}
+
+.price {
+  margin-bottom: 15px;
+}
+
+.location {
+  width: 20px;
+}
+
+.delete-location {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin-top: 4px;
 }
 
-.propertyImageContainerHP {
-  height: 200px;
-  width: 200px;
+.del-btn {
+  margin-top: 20px;
+  background-color: rgba(210, 31, 31, 0.8);
+  font-family: inherit;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 5px;
+  width: fit-content;
+  height: 35px;
 }
 
-.propertyTextsContainerHP {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+.del-btn:hover {
+  opacity: 0.7;
 }
 
-.propertyIconHomePage {
-  height: 200px;
-  width: 200px;
+@media screen and (min-width: 768px) {
+  .delete-component {
+    padding-left: 250px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .propertyIcon {
+    width: 650px;
+    border-radius: 5px;
+  }
+
+  .delete-square-details {
+    border: 1px solid rgb(192, 192, 192);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .propertyDetails {
+    padding: 0;
+    width: 250px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .delete-component {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .propertyIcon {
+    width: 250px;
+  }
 }

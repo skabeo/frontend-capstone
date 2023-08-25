@@ -18,23 +18,20 @@ export const Delete = () => {
 
   if (portfolio) {
     return (
-      <div>
-        <div>
-          <h1>Remove properties</h1>
-          <p>Welcome to the page where you can navigate through the properties and remove them</p>
-          <div className="homePagePropertiesContainer">
-            {portfolio.length ? portfolio.map((property) => (
-              <DeleteSquare
-                key={property.id}
-                name={property.name}
-                price={property.price}
-                location={property.location}
-                image={property.image}
-                onClick={() => handleDelete(property.id)}
-              />
-            ))
-              : <p>Nothing to show</p>}
-          </div>
+      <div className="delete-component">
+        <h3 className="delPage-title">Remove properties</h3>
+        <div className="delPagePropertiesContainer">
+          {portfolio.length ? portfolio.map((property) => (
+            <DeleteSquare
+              key={property.id}
+              name={property.name}
+              price={property.price}
+              location={property.location}
+              image={property.image}
+              onClick={() => handleDelete(property.id)}
+            />
+          ))
+            : <p className="delPage-msg">Nothing to show</p>}
         </div>
       </div>
     );
@@ -42,9 +39,8 @@ export const Delete = () => {
   return (
     <div>
       <div>
-        <h1>Remove properties</h1>
-        <p>Welcome to the page where you can navigate through the properties and remove them</p>
-        <p>Nothing here for now! Check the App property link to add new properties</p>
+        <h3 className="delPage-title">Remove properties</h3>
+        <p className="delPage-msg">Nothing here for now! Check the App property link to add new properties</p>
       </div>
     </div>
   );

@@ -25,3 +25,25 @@ code {
     'Courier New',
     monospace;
 }
+
+/* Small screens */
+@media (max-width: 768px) {
+  /* Your CSS styles for small screens */
+  .large-screens {
+    display: none;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .small-screen {
+    display: none;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1201px) {
+  .small-screen {
+    display: none;
+  }
+}
