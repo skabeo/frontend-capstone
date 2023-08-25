@@ -118,5 +118,12 @@
     justify-content: space-around;
     padding-left: 20%;
     padding-right: 20%;
-
   }
+
+  .smIcon1 {
+    background-image: url('../assets/iconTwiter.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+  }
+  
