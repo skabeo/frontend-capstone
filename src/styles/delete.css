@@ -1,4 +1,8 @@
-/* Add this to your existing CSS file */
+
+.delete-component {
+  padding-left: 220px;
+}
+
 .delPage-title {
   font-size: 24px;
   color: #612ace;
@@ -66,6 +70,10 @@
 
 /* For small screens, use a single column */
 @media (max-width: 768px) {
+  .delete-component {
+    padding: 60px;
+  }
+
   .delPagePropertiesContainer {
     grid-template-columns: 1fr;
   }
@@ -80,6 +88,7 @@
 
   .wrapper {
     width: 65vw;
+    max-width: 600px;
     border: 1px solid #612ace;
     border-radius: 10px;
     padding: 2px;
@@ -92,6 +101,7 @@
 
   .propertyIcon {
     width: 30vw;
+    max-width: 325px;
     height: auto;
     border-radius: 10px;
   }

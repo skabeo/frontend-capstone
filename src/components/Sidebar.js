@@ -18,16 +18,17 @@ const Sidebar = () => {
           <NavLink to="/add-property" activeClassName="active-link">Add property</NavLink>
           <NavLink to="/delete" activeClassName="active-link">Delete property</NavLink>
         </div>
-        <div className="session-btn large-screens"><Link to="/signout">Logout</Link></div>
+        <Link to="/signout" className="session-btn large-screens">Logout</Link>
       </>
+    );
+    return (
+      <div className="sidebar large-screens">
+        {sessionLinks}
+      </div>
     );
   }
 
-  return (
-    <div className="sidebar large-screens">
-      {sessionLinks}
-    </div>
-  );
+  return null;
 };
 
 export default Sidebar;

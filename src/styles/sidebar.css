@@ -1,6 +1,6 @@
 .sidebar {
   position: fixed;
-  width: 20vw;
+  max-width: 215px;
   height: 100vh;
   border-right: 1px rgba(128, 128, 128, 0.3) solid;
   padding: 20px;
@@ -16,6 +16,11 @@
   flex-direction: column;
   row-gap: 15px;
   text-align: center;
+}
+
+.app-links a {
+  min-width: 150px;
+  padding: 10px;
 }
 
 .app-links a:hover {
@@ -38,7 +43,7 @@
 
 .session-btn {
   border: 2px solid #8a4fff;
-  width: 18vw;
+  width: 99%;
   height: 45px;
   padding-top: 10px;
   text-align: center;

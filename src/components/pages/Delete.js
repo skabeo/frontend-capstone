@@ -18,7 +18,7 @@ export const Delete = () => {
 
   if (portfolio) {
     return (
-      <div>
+      <div className="delete-component">
         <h1 className="delPage-title">Remove properties</h1>
         <p className="delPage-msg">Welcome to the page where you can navigate through the properties and remove them</p>
         <div className="delPagePropertiesContainer">
