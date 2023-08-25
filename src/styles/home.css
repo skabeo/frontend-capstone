@@ -97,10 +97,6 @@
   width: 200px;
 }
 
-.propertyIconHomePage {
-  border-radius: 50%;
-}
-
 .propertyTextsContainerHP {
   display: flex;
   flex-direction: column;
@@ -108,6 +104,7 @@
 }
 
 .propertyIconHomePage {
+  border-radius: 50%;
   height: 180px;
   width: 180px;
 }
