@@ -1,0 +1,11 @@
+@import url(https://db.onlinewebfonts.com/c/e5dd271b22ec2264556a24efe4b740e9?family=Fenomen+Sans+Bold);
+
+@font-face {
+    font-family: "Fenomen Sans Bold";
+    src: url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.eot");
+    src: url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.svg#Fenomen Sans Bold")format("svg");
+}
