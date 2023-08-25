@@ -133,3 +133,10 @@
     width: 20px;
     height: 20px;
   }
+  
+  .smIcon3 {
+    background-image: url('../assets/iconInstagram.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+  }
