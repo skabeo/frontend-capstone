@@ -12,128 +12,128 @@
 }
 
 .homePageContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    padding-top: 10%;
-    padding-bottom: 5%;
-    font-family: "Fenomen Sans Bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-family: "Fenomen Sans Bold";
 }
 
 .homeTextsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .secondaryText {
-    color: lightgrey;
+  color: lightgrey;
 }
 
 .homePagePropertiesContainer {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .carousel-container {
-    display: flex;
-    width: 80%;
-    height: auto;
-    border: none;
-  }
+  display: flex;
+  width: 80%;
+  height: auto;
+  border: none;
+}
 
-  .react-multi-carousel-track {
-    align-items: center;
-    border: none;
- }
+.react-multi-carousel-track {
+  align-items: center;
+  border: none;
+}
 
- .react-multi-carousel-item--active {
-    display: flex;
-    justify-content: center;
- }
+.react-multi-carousel-item--active {
+  display: flex;
+  justify-content: center;
+}
 
- .button1 {
-    width: 68px;
-    height: 50px;
-    background-image: url('../assets/leftArrow.jpg');
-    background-size: contain;
-    background-position: right;
-    position: fixed;
-    left: 5%;
-    top: 56%;
-    border: none;
-  }
+.button1 {
+  width: 68px;
+  height: 50px;
+  background-image: url('../assets/leftArrow.jpg');
+  background-size: contain;
+  background-position: right;
+  position: fixed;
+  left: 5%;
+  top: 56%;
+  border: none;
+}
 
-  .button2 {
-    width: 68px;
-    height: 50px;
-    background-image: url('../assets/rightArrow.jpg');
-    background-size: contain;
-    background-position: left;
-    position: fixed;
-    right: 5%;
-    top: 56%;
-    border: none;
-  }
+.button2 {
+  width: 68px;
+  height: 50px;
+  background-image: url('../assets/rightArrow.jpg');
+  background-size: contain;
+  background-position: left;
+  position: fixed;
+  right: 5%;
+  top: 56%;
+  border: none;
+}
 
-  .individualPropertyContainerHP {
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    flex-direction: column;
-    height: fit-content;
-    gap: 10px;
-    width: 220px;
-    align-items: center;
-    justify-content: space-around;
-    border: none;
-    background-color: white;
-  }
+.individualPropertyContainerHP {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  height: fit-content;
+  gap: 10px;
+  width: 220px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  background-color: white;
+}
 
-  .propertyImageContainerHP {
-    height: 200px;
-    width: 200px;
-  }
+.propertyImageContainerHP {
+  height: 200px;
+  width: 200px;
+}
 
-  .propertyIconHomePage {
-    border-radius: 50%;
-  }
+.propertyIconHomePage {
+  border-radius: 50%;
+}
 
-  .propertyTextsContainerHP {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-  }
+.propertyTextsContainerHP {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
 
-  .propertyIconHomePage {
-    height: 180px;
-    width: 180px;
-  }
+.propertyIconHomePage {
+  height: 180px;
+  width: 180px;
+}
 
-  .iconsContainer {
-    display: flex;
-    flex-direction: row;
-    width: inherit;
-    justify-content: space-around;
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+}
 
-  .smIcon1 {
-    background-image: url('../assets/iconTwiter.svg');
-    background-size: contain;
-    width: 20px;
-    height: 20px;
-  }
+.smIcon1 {
+  background-image: url('../assets/iconTwiter.svg');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
 
-  .smIcon2 {
-    background-image: url('../assets/iconFacebook.svg');
-    background-size: contain;
-    width: 20px;
-    height: 20px;
-  }
+.smIcon2 {
+  background-image: url('../assets/iconFacebook.svg');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
 
 .smIcon3 {
   background-image: url('../assets/iconInstagram.svg');
