@@ -9,6 +9,14 @@
     padding: 10px;
     z-index: 10;
     right: 20px;
+    background-color: #000;
+    border-radius: 20px;
+    transition: box-shadow 0.3s, background-color 0.3s;
+  }
+
+  .hamburger:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(81, 2, 109, 0.5);
   }
 
   .hamburger .bar {
