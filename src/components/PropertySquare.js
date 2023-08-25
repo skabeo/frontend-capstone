@@ -5,7 +5,7 @@ const description = 'This a wonderful property ready to move in. You can appreci
 
 export const PropertySquare = (props) => {
   const {
-    name, location, price, image, onClick,
+    name, image, onClick,
   } = props;
 
   return (
