@@ -19,8 +19,7 @@ export const Delete = () => {
   if (portfolio) {
     return (
       <div className="delete-component">
-        <h1 className="delPage-title">Remove properties</h1>
-        <p className="delPage-msg">Welcome to the page where you can navigate through the properties and remove them</p>
+        <h3 className="delPage-title">Remove properties</h3>
         <div className="delPagePropertiesContainer">
           {portfolio.length ? portfolio.map((property) => (
             <DeleteSquare
@@ -40,8 +39,7 @@ export const Delete = () => {
   return (
     <div>
       <div>
-        <h1 className="delPage-title">Remove properties</h1>
-        <p className="delPage-msg">Welcome to the page where you can navigate through the properties and remove them</p>
+        <h3 className="delPage-title">Remove properties</h3>
         <p className="delPage-msg">Nothing here for now! Check the App property link to add new properties</p>
       </div>
     </div>

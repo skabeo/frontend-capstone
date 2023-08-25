@@ -32,7 +32,7 @@
 }
 
 .active {
-  background: linear-gradient(135deg,#af40ff,#5b42f3 100%,#00ddeb);
+  background: linear-gradient(135deg, #af40ff, #5b42f3 100%, #00ddeb);
   border-radius: 5px;
   color: white;
 }

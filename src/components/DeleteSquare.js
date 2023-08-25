@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import locationImg from '../assets/location.png';
 
 export const DeleteSquare = (props) => {
   const {
@@ -10,16 +11,26 @@ export const DeleteSquare = (props) => {
     <div className="wrapper">
       <img className="propertyIcon" src={image} alt="property" />
       <div className="propertyDetails">
-        <h4>{name}</h4>
-        <h4>
-          Location:
-          {location}
-        </h4>
-        <div className="price">
-          <span>Price: $</span>
-          <span>{price}</span>
+        <div className="delete-square-details">
+          <p className="price">
+            <strong>
+              from US$
+              {price}
+            </strong>
+          </p>
+          <p>{name}</p>
+          <span className="delete-location">
+            <img src={locationImg} className="location" alt="location-logo" />
+            <p>{location}</p>
+          </span>
+          <button
+            onClick={onClick}
+            type="button"
+            className="del-btn"
+          >
+            Delete
+          </button>
         </div>
-        <button onClick={onClick} type="button" className="del-btn">Delete</button>
       </div>
     </div>
   );

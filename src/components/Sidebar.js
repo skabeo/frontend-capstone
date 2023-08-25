@@ -22,11 +22,11 @@ const Sidebar = () => {
         </div>
         <div className="sidebar-links-container">
           <div className="app-links large-screens">
-            <NavLink to="/" activeClassName="active-link">Properties</NavLink>
-            <NavLink to="/reserve" activeClassName="active-link">Reserve property</NavLink>
-            <NavLink to="/reservations" activeClassName="active-link">My Reservations</NavLink>
-            <NavLink to="/add-property" activeClassName="active-link">Add property</NavLink>
-            <NavLink to="/delete" activeClassName="active-link">Delete property</NavLink>
+            <NavLink to="/" activeclassname="active-link">Properties</NavLink>
+            <NavLink to="/reserve" activeclassname="active-link">Reserve property</NavLink>
+            <NavLink to="/reservations" activeclassname="active-link">My Reservations</NavLink>
+            <NavLink to="/add-property" activeclassname="active-link">Add property</NavLink>
+            <NavLink to="/delete" activeclassname="active-link">Delete property</NavLink>
           </div>
         </div>
         <Link to="/signout" className="session-btn large-screens">Logout</Link>

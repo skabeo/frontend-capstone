@@ -1,6 +1,12 @@
 
 .delete-component {
-  padding-left: 220px;
+  padding: 10px;
+}
+
+.delPagePropertiesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .delPage-title {
@@ -18,100 +24,84 @@
 }
 
 .wrapper {
-  border: 1px solid #612ace;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  gap: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .propertyIcon {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .propertyDetails {
-  margin-top: 10px;
+  padding: 10px;
 }
 
 .price {
+  margin-bottom: 15px;
+}
+
+.location {
+  width: 20px;
+}
+
+.delete-location {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .del-btn {
-  background-color: #612ace;
+  margin-top: 20px;
+  background-color: rgba(210, 31, 31, 0.8);
+  font-family: inherit;
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.2s;
-  border-radius: 8px;
+  border-radius: 5px;
   width: fit-content;
   height: 35px;
 }
 
 .del-btn:hover {
-  background-color: #8a4fff;
+  opacity: 0.7;
 }
 
-/* For medium screens, use 2 columns */
-@media (min-width: 769px) and (max-width: 979px) {
-  .delPagePropertiesContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* For small screens, use a single column */
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .delete-component {
-    padding: 60px;
-  }
-
-  .delPagePropertiesContainer {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* For large screen we go for a display flex columns */
-@media (min-width: 980px) {
-  .delPagePropertiesContainer {
-    display: flex;
-    flex-direction: column;
+    padding-left: 250px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .wrapper {
-    width: 65vw;
-    max-width: 600px;
-    border: 1px solid #612ace;
-    border-radius: 10px;
-    padding: 2px;
-    margin: 10px 10px 10px 40px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: center;
+    gap: 25px;
+    box-shadow: none;
+    width: 100%;
   }
 
   .propertyIcon {
-    width: 30vw;
-    max-width: 325px;
-    height: auto;
-    border-radius: 10px;
+    width: 650px;
+    border-radius: 5px;
+  }
+
+  .delete-square-details {
+    border: 1px solid rgb(192, 192, 192);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
   }
 
   .propertyDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 200px;
-    margin-left: 5px;
-    align-items: baseline;
+    padding: 0;
+    width: 250px;
   }
 }
