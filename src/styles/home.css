@@ -90,3 +90,8 @@
     border: none;
     background-color: white;
   }
+
+  .propertyImageContainerHP {
+    height: 200px;
+    width: 200px;
+  }
