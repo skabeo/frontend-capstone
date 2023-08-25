@@ -126,4 +126,10 @@
     width: 20px;
     height: 20px;
   }
-  
+
+  .smIcon2 {
+    background-image: url('../assets/iconFacebook.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+  }
