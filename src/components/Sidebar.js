@@ -16,7 +16,7 @@ const Sidebar = () => {
           <p className="bold">properties</p>
           <hr className="sidebar-logo-line" />
           <p className="sidebar-username">
-            Welcome
+            Signed in as
             <span className="sidebar-name">{name}</span>
           </p>
         </div>
