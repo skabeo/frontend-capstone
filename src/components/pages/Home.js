@@ -39,7 +39,36 @@ export const Home = () => {
     nav(`property/${property.id}`, { state: { property } });
   };
 
- 
+  return (
+    <div className="homePageContainer">
+      <div className="homeTextsContainer">
+
+      </div>
+
+      <Carousel
+        arrows
+        customRightArrow={<CustomRightArrow />}
+        customLeftArrow={<CustomLeftArrow />}
+        swipeable
+        draggable={false}
+        responsive={responsive}
+        ssr
+        infinite
+        autoPlay={false}
+        autoPlaySpeed={1000}
+        keyBoardControl
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={['tablet', 'mobile']}
+        deviceType="desktop"
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+
+      </Carousel>
+    </div>
+  );
 };
 
 export default Home;
