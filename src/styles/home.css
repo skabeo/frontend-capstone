@@ -42,3 +42,8 @@
     height: auto;
     border: none;
   }
+
+  .react-multi-carousel-track {
+    align-items: center;
+    border: none;
+ }
