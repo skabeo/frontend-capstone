@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const description = 'This a wonderful property ready to move in. You can appreciatte every design detail and all the amazing amenities';
+
 export const PropertySquare = (props) => {
   const {
     name, location, price, image, onClick,
