@@ -76,4 +76,17 @@
     top: 56%;
     border: none;
   }
-  
+
+  .individualPropertyContainerHP {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    height: fit-content;
+    gap: 10px;
+    width: 220px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    background-color: white;
+  }
