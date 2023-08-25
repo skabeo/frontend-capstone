@@ -91,5 +91,8 @@ export const Home = () => {
 CustomRightArrow.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
+CustomLeftArrow.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Home;
