@@ -2,13 +2,13 @@
   position: fixed;
   width: 20vw;
   height: 100vh;
-  border-right: 2px solid;
+  /* border-right: 2px solid; */
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(to bottom, #fff, #8a4fff);
+  background: #fff;
 }
 
 .app-links {
@@ -19,9 +19,8 @@
 }
 
 .app-links a:hover {
-  background-color: #fff;
+  background-color: #8a4fff;
   border-radius: 10px;
-  font-size: smaller;
 }
 
 .app-logo {
