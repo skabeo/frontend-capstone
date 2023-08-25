@@ -15,6 +15,10 @@ export const PropertySquare = (props) => {
         <div className="propertyImageContainerHP">
           <img className="propertyIconHomePage" src={image} alt="property" />
         </div>
+        <br />
+        <h4>{name.toUpperCase()}</h4>
+        <h4 className="secondaryText">****************</h4>
+        <h5 className="secondaryText">{description}</h5>
       </button>
       
       <br />
