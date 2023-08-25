@@ -2,7 +2,7 @@
   position: fixed;
   width: 20vw;
   height: 100vh;
-  /* border-right: 2px solid; */
+  border-right: 1px rgba(128, 128, 128, 0.3) solid;
   padding: 20px;
   display: flex;
   flex-direction: column;

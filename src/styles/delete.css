@@ -10,6 +10,7 @@
   font-size: 16px;
   color: #333;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .wrapper {
@@ -46,6 +47,9 @@
   padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.2s;
+  border-radius: 8px;
+  width: fit-content;
+  height: 35px;
 }
 
 .del-btn:hover {
@@ -80,8 +84,8 @@
   width: 65vw;
   border: 1px solid #612ace;
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  padding: 2px;
+  margin: 10px 10px 10px 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -90,6 +94,18 @@
 
 .propertyIcon {
   width: 30vw;
+  height: auto;
+  border-radius: 10px;
+}
+
+.propertyDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  margin-left: 5px;
+  align-items: baseline;
+
 }
 
 }

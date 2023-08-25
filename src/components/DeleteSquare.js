@@ -11,9 +11,9 @@ export const DeleteSquare = (props) => {
       <img className="propertyIcon" src={image} alt="property" />
       <div className="propertyDetails">
         <h4>{name}</h4>
-        <h4>{location}</h4>
+        <h4>Location: {location}</h4>
         <div className="price">
-          <span>$</span>
+          <span>Price: $</span>
           <span>{price}</span>
         </div>
         <button onClick={onClick} type="button" className="del-btn">Delete</button>
