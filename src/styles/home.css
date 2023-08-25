@@ -9,3 +9,13 @@
     url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.svg#Fenomen Sans Bold")format("svg");
 }
+
+.homePageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-family: "Fenomen Sans Bold";
+}
