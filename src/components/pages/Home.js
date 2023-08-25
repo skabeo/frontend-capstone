@@ -88,4 +88,8 @@ export const Home = () => {
   );
 };
 
+CustomRightArrow.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
+
 export default Home;
