@@ -58,7 +58,6 @@
 
 /* For medium screens, use 2 columns */
 @media (min-width: 769px) and (max-width: 979px) {
-
   .delPagePropertiesContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -74,38 +73,35 @@
 
 /* For large screen we go for a display flex columns */
 @media (min-width: 980px) {
-
   .delPagePropertiesContainer {
     display: flex;
     flex-direction: column;
   }
 
-.wrapper {
-  width: 65vw;
-  border: 1px solid #612ace;
-  border-radius: 10px;
-  padding: 2px;
-  margin: 10px 10px 10px 40px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-}
+  .wrapper {
+    width: 65vw;
+    border: 1px solid #612ace;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 10px 10px 10px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
 
-.propertyIcon {
-  width: 30vw;
-  height: auto;
-  border-radius: 10px;
-}
+  .propertyIcon {
+    width: 30vw;
+    height: auto;
+    border-radius: 10px;
+  }
 
-.propertyDetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
-  margin-left: 5px;
-  align-items: baseline;
-
-}
-
+  .propertyDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-left: 5px;
+    align-items: baseline;
+  }
 }
