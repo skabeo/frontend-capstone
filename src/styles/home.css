@@ -110,3 +110,13 @@
     height: 180px;
     width: 180px;
   }
+
+  .iconsContainer {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+
+  }
