@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import '../../styles/home.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
