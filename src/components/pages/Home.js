@@ -26,6 +26,8 @@ const responsive = {
   },
 };
 
+const CustomRightArrow = ({ onClick }) => <button aria-label="nextButton" type="button" className="button2" onClick={() => onClick()} />;
+
 export const Home = () => {
   const portfolio = useSelector((state) => state.properties.portfolio);
   const dispatch = useDispatch();
