@@ -99,3 +99,9 @@
   .propertyIconHomePage {
     border-radius: 50%;
   }
+
+  .propertyTextsContainerHP {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
