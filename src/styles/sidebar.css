@@ -1,59 +1,73 @@
 .sidebar {
   position: fixed;
-  max-width: 215px;
-  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
   border-right: 1px rgba(128, 128, 128, 0.3) solid;
-  padding: 20px;
+  background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background: #fff;
+  justify-content: space-between;
+}
+
+.sidebar-links-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .app-links {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .app-links a {
-  min-width: 150px;
-  padding: 10px;
+  padding: 5px 15px;
 }
 
 .app-links a:hover {
-  background-color: #8a4fff;
-  border-radius: 10px;
-}
-
-.app-logo {
-  height: 70px;
-  width: 70px;
-  border-radius: 50px;
+  outline: 1px solid #612ace;
+  border-radius: 5px;
 }
 
 .active {
   background-color: #8a4fff;
-  font-size: large;
-  font-weight: 700;
-  border-radius: 8px;
+  border-radius: 5px;
+  color: white;
 }
 
 .session-btn {
-  border: 2px solid #8a4fff;
-  width: 99%;
-  height: 45px;
-  padding-top: 10px;
+  background-color: rgb(226, 226, 226);
+  color: black;
+  padding: 10px 0;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 10px;
 }
 
 .session-btn:hover {
-  background-color: #e28181;
-  color: #fff;
-  font-size: smaller;
+  opacity: 0.7;
+}
+
+.sidebar-logo-line {
+  margin-top: 5px;
+}
+
+.sidebar-username {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.sidebar-name {
+  margin-left: 5px;
 }
 
 /* Small screens */
