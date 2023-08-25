@@ -64,3 +64,16 @@
     top: 56%;
     border: none;
   }
+
+  .button2 {
+    width: 68px;
+    height: 50px;
+    background-image: url('../assets/rightArrow.jpg');
+    background-size: contain;
+    background-position: left;
+    position: fixed;
+    right: 5%;
+    top: 56%;
+    border: none;
+  }
+  
