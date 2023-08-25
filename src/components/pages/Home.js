@@ -65,7 +65,15 @@ export const Home = () => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-
+        {portfolio.length ? portfolio.map((property) => (
+          <PropertySquare
+            key={property.id}
+            name={property.name}
+            image={property.image}
+            onClick={() => switchPage(property)}
+          />
+        ))
+          : <p>Nothing to show</p>}
       </Carousel>
     </div>
   );
