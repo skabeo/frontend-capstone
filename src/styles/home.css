@@ -12,10 +12,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    .homePageContainer{
-      margin-left: 250px;
-    }  
+  .homePageContainer {
+    margin-left: 250px;
   }
+}
 
 .homePageContainer {
   display: flex;
@@ -23,7 +23,7 @@
   align-items: center;
   padding-top: 10%;
   padding-bottom: 5%;
-  font-family: "Fenomen Sans Bold", sans-serif;
+  font-family: inherit;
 }
 
 .homeTextsContainer {
@@ -74,13 +74,22 @@
 .button2 {
   width: 68px;
   height: 50px;
-  background-image: url('../assets/rightArrow.jpg');
-  background-size: contain;
-  background-position: left;
+
+  /* background-image: url('../assets/angle-right.png');
+  background-size: 15px;
+  background-position: left; */
+  background: linear-gradient(135deg, #af40ff, #5b42f3 100%, #00ddeb);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   position: fixed;
   right: 5%;
   top: 56%;
   border: none;
+}
+
+.home-angle-right {
+  /* background-color: red; */
+  width: 25px;
 }
 
 .individualPropertyContainerHP {
@@ -94,6 +103,7 @@
   justify-content: space-around;
   border: none;
   background-color: white;
+  font-family: inherit;
 }
 
 .propertyImageContainerHP {

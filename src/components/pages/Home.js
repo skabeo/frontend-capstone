@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
 import { PropertySquare } from '../PropertySquare';
+import angleRight from '../../assets/angle-right2.png';
 
 const responsive = {
   desktop: {
@@ -26,7 +27,19 @@ const responsive = {
   },
 };
 
-const CustomRightArrow = ({ onClick }) => <button aria-label="nextButton" type="button" className="button2" onClick={() => onClick()} />;
+const CustomRightArrow = ({ onClick }) => (
+  <div>
+    <button
+      aria-label="nextButton"
+      type="button"
+      className="button2"
+      onClick={() => onClick()}
+    >
+      <img src={angleRight} alt="next" className="home-angle-right" />
+    </button>
+
+  </div>
+);
 const CustomLeftArrow = ({ onClick }) => <button aria-label="previousButton" type="button" className="button1" onClick={() => onClick()} />;
 
 export const Home = () => {
