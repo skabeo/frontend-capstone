@@ -16,8 +16,8 @@ export const DeleteSquare = (props) => {
           <span>$</span>
           <span>{price}</span>
         </div>
+        <button onClick={onClick} type="button" className="del-btn">Delete</button>
       </div>
-      <button onClick={onClick} type="button" className="del-btn">Delete</button>
     </div>
   );
 };
