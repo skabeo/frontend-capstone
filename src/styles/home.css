@@ -30,3 +30,8 @@
 .secondaryText {
     color: lightgrey;
 }
+
+.homePagePropertiesContainer {
+    display: flex;
+    flex-direction: row;
+}
