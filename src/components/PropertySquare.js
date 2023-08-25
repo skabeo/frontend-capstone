@@ -9,19 +9,17 @@ export const PropertySquare = (props) => {
   } = props;
 
   return (
-    <button onClick={onClick} type="button" className="individualPropertyContainerHP">
-      <div className="propertyImageContainerHP">
-        <img className="propertyIconHomePage" src={image} alt="property" />
-      </div>
-      <div className="propertyTextsContainerHP">
-        <h4>{name}</h4>
-        <h4>{location}</h4>
-        <div className="textRow">
-          <span>$</span>
-          <span>{price}</span>
+    <div>
+      <br />
+      <button onClick={onClick} type="button" className="individualPropertyContainerHP">
+        <div className="propertyImageContainerHP">
+          <img className="propertyIconHomePage" src={image} alt="property" />
         </div>
-      </div>
-    </button>
+      </button>
+      
+      <br />
+      <br />
+    </div>
   );
 };
 
