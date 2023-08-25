@@ -2,11 +2,13 @@
 /* small screens */
 @media (max-width: 768px) {
   .hamburger {
+    position: absolute;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
     z-index: 10;
+    right: 20px;
   }
 
   .hamburger .bar {
@@ -42,6 +44,11 @@
     width: 100%;
     z-index: 9;
     margin-bottom: 20px;
+  }
+
+  .nav-elements {
+    display: flex;
+    flex-direction: column;
   }
 
   .nav-links {

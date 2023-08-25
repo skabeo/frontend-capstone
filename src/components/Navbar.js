@@ -25,7 +25,7 @@ const Navbar = () => {
     );
     return (
         <div className={`nav-container small-screen ${isMenuOpen ? 'menu-open' : ''}`}>
-          <div className="email-link">
+          <div className="nav-elements">
             <button type="button" className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
               <span className="bar" />
               <span className="bar" />
