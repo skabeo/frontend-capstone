@@ -26,3 +26,7 @@
     align-items: center;
     justify-content: center;
 }
+
+.secondaryText {
+    color: lightgrey;
+}
