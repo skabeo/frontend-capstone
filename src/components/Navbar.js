@@ -23,20 +23,20 @@ const Navbar = () => {
         <Link to="/signout" onClick={toggleMenu}>Logout</Link>
       </div>
     );
+    return (
+        <div className={`nav-container small-screen ${isMenuOpen ? 'menu-open' : ''}`}>
+          <div className="email-link">
+            <button type="button" className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+              <span className="bar" />
+              <span className="bar" />
+              <span className="bar" />
+            </button>
+            {sessionLinks}
+          </div>
+        </div>
+      );
   }
 
-  return (
-    <div className={`nav-container small-screen ${isMenuOpen ? 'menu-open' : ''}`}>
-      <div className="email-link">
-        <button type="button" className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-          <span className="bar" />
-          <span className="bar" />
-          <span className="bar" />
-        </button>
-        {sessionLinks}
-      </div>
-    </div>
-  );
 };
 
 export default Navbar;
