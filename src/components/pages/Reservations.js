@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchReservations } from '../../redux/reservations/reserveSlice';
+import '../../styles/my-reservation.css'
 
 const Reservations = () => {
   const reservations = useSelector((state) => state.reservations.reservations);
@@ -14,8 +15,8 @@ const Reservations = () => {
   }, [dispatch, accessToken]);
 
   return (
-    <div>
-      <h1>My Reservations</h1>
+    <div className='my-reservation-container'>
+      <h3 className='center-text'>My Reservations</h3>
       <div className="homePagePropertiesContainer">
         {reservations.length ? (
           reservations.map((reserve) => (

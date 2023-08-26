@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
 import { createReservation } from '../../redux/reservations/reserveSlice';
+import '../../styles/reservation.css';
 
 const ReserveForm = () => {
   const [date, setDate] = useState('');
@@ -50,35 +51,48 @@ const ReserveForm = () => {
   };
 
   return (
-    <div>
-      <h1>Reserve Form</h1>
-      <form>
-        <select
-          name="availableProperties"
-          value={propertyId}
-          onChange={(e) => setPropertyId(e.target.value)}
-        >
-          {state && <option value={state.id} defaultValue>{state.name}</option>}
-          {!state && <option value="" defaultValue>Choose a Property</option>}
+    <div className="reserve-form-container">
+      <div className="reserve-form-overlay">
+        <div className="reserve-desktop-sizing">
+          <h3 className="center-text reserve-form-title">Reserve Form</h3>
+          {feedbackMessage && <p className="success-flash">{feedbackMessage}</p>}
+          <form className="form-container small-gap">
+            <select
+              name="availableProperties"
+              value={propertyId}
+              onChange={(e) => setPropertyId(e.target.value)}
+              className="reserve-drop-down"
+            >
+              {state && <option value={state.id} defaultValue>{state.name}</option>}
+              {!state && <option value="" defaultValue>Choose a Property</option>}
 
-          {!state && portfolio.map((item) => (
-            <option key={item.id} value={item.id}>{item.name}</option>
-          ))}
-        </select>
-        <input
-          type="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="City"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-        />
-        <button type="submit" onClick={handleSubmit}>Reserve</button>
-      </form>
-      {feedbackMessage && <p>{feedbackMessage}</p>}
+              {!state && portfolio.map((item) => (
+                <option key={item.id} value={item.id}>{item.name}</option>
+              ))}
+            </select>
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              required
+            />
+            <input
+              type="text"
+              placeholder="City"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+              required
+            />
+            <button
+              type="submit"
+              onClick={handleSubmit}
+              className="reserve-submit-btn"
+            >
+              Reserve
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
