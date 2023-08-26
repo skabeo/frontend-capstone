@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createProperty } from '../../redux/properties/propertiesSlice';
+import '../../styles/add-property.css';
 
 const AddProperties = () => {
   const accessToken = useSelector((state) => state.session.accessToken);
@@ -41,52 +42,56 @@ const AddProperties = () => {
   };
 
   return (
-    <div>
-      <h1>Form that allows users to add a property</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            required
-          />
+    <div className="add-property-container">
+      <div className="add-property-overlay">
+        <div className="add-property-sizing">
+          <h3 className="center-text reserve-form-title">Add property</h3>
+          {feedbackMessage && <p className="success-flash">{feedbackMessage}</p>}
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label className="reserve-form-title">Name:</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div>
+              <label className="reserve-form-title">Image URL:</label>
+              <input
+                type="text"
+                name="image"
+                value={formData.image}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div>
+              <label className="reserve-form-title">Location:</label>
+              <input
+                type="text"
+                name="location"
+                value={formData.location}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div>
+              <label className="reserve-form-title">Price: $</label>
+              <input
+                type="number"
+                name="price"
+                value={formData.price}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <button type="submit" className="add-property-submit">Add Property</button>
+          </form>
         </div>
-        <div>
-          <label>Image URL:</label>
-          <input
-            type="text"
-            name="image"
-            value={formData.image}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <div>
-          <label>Location:</label>
-          <input
-            type="text"
-            name="location"
-            value={formData.location}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <div>
-          <label>Price: $</label>
-          <input
-            type="number"
-            name="price"
-            value={formData.price}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <button type="submit">Add Property</button>
-      </form>
-      {feedbackMessage && <p>{feedbackMessage}</p>}
+      </div>
     </div>
   );
 };

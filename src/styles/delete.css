@@ -75,8 +75,11 @@
 
 @media screen and (min-width: 768px) {
   .delete-component {
-    padding-left: 250px;
-    max-width: 1000px;
+    margin-left: 250px;
+  }
+
+  .delPagePropertiesContainer {
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -90,6 +93,8 @@
 
   .propertyIcon {
     width: 650px;
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
   }
 
@@ -104,15 +109,26 @@
     padding: 0;
     width: 250px;
   }
+
+  .delete-flash {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 900px) {
   .delete-component {
     max-width: 600px;
     margin: 0 auto;
+    margin-left: 250px;
   }
 
   .propertyIcon {
     width: 250px;
+  }
+
+  .delete-flash {
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
