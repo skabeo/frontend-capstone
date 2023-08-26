@@ -1,0 +1,154 @@
+@import url(https://db.onlinewebfonts.com/c/e5dd271b22ec2264556a24efe4b740e9?family=Fenomen+Sans+Bold);
+
+@font-face {
+  font-family: "Fenomen Sans Bold";
+  src: url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.eot");
+  src:
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e5dd271b22ec2264556a24efe4b740e9.svg#Fenomen Sans Bold") format("svg");
+}
+
+@media screen and (min-width: 768px) {
+  .homePageContainer {
+    margin-left: 250px;
+  }
+}
+
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-family: inherit;
+}
+
+.homeTextsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondaryText {
+  color: lightgrey;
+}
+
+.homePagePropertiesContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-container {
+  display: flex;
+  width: 80%;
+  height: auto;
+  border: none;
+}
+
+.react-multi-carousel-track {
+  align-items: center;
+  border: none;
+}
+
+.react-multi-carousel-item--active {
+  display: flex;
+  justify-content: center;
+}
+
+.button1 {
+  width: 68px;
+  height: 50px;
+  background-image: url('../assets/leftArrow.jpg');
+  background-size: contain;
+  background-position: right;
+  position: fixed;
+  left: 310px;
+  top: 56%;
+  border: none;
+}
+
+.button2 {
+  width: 68px;
+  height: 50px;
+
+  /* background-image: url('../assets/angle-right.png');
+  background-size: 15px;
+  background-position: left; */
+  background: linear-gradient(135deg, #af40ff, #5b42f3 100%, #00ddeb);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  position: fixed;
+  right: 5%;
+  top: 56%;
+  border: none;
+}
+
+.home-angle-right {
+  /* background-color: red; */
+  width: 25px;
+}
+
+.individualPropertyContainerHP {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  gap: 10px;
+  width: 220px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  background-color: white;
+  font-family: inherit;
+}
+
+.propertyImageContainerHP {
+  height: 200px;
+  width: 200px;
+}
+
+.propertyTextsContainerHP {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.propertyIconHomePage {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.smIcon1 {
+  background-image: url('../assets/iconTwiter.svg');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.smIcon2 {
+  background-image: url('../assets/iconFacebook.svg');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.smIcon3 {
+  background-image: url('../assets/iconInstagram.svg');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}

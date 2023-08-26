@@ -11,6 +11,8 @@ const CURRENT_USER_URL = '/users/me';
 // const CLIENT_SECRET = 'mfinIE__6L5ZmRKdhm1wu2gUqA5wq-TFLHuyr0FZiW0';
 const CLIENT_ID = 'l-V5cgU4-1_izHlPa2OpEN3c6zmABb73IkfrQQ9UI0U';
 const CLIENT_SECRET = 'Obu_dGj8piC2VcWe0WYhMd10AGaLXznoQTAnLsRHyZk';
+// const CLIENT_ID = 'NVPadEE-ot1ZlxfyNX6ZyaFJu0Hr7kSWlKSSFbySvBU';
+// const CLIENT_SECRET = 'J0Kx8vbUg3LavQG2lShmMDQTVcXJfRMTFKgtZ50ODW4';
 
 export const createUserWithEmailAndPassword = async (name, email, password) => {
   const data = {

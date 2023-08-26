@@ -1,32 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const description = 'This a wonderful property ready to move in. You can appreciatte every design detail and all the amazing amenities';
+
 export const PropertySquare = (props) => {
   const {
-    name, location, price, image, onClick,
+    name, image, onClick,
   } = props;
 
   return (
-    <button onClick={onClick} type="button" className="individualPropertyContainerHP">
-      <div className="propertyImageContainerHP">
-        <img className="propertyIconHomePage" src={image} alt="property" />
-      </div>
-      <div className="propertyTextsContainerHP">
-        <h4>{name}</h4>
-        <h4>{location}</h4>
-        <div className="textRow">
-          <span>$</span>
-          <span>{price}</span>
+    <div>
+      <br />
+      <button onClick={onClick} type="button" className="individualPropertyContainerHP">
+        <div className="propertyImageContainerHP">
+          <img className="propertyIconHomePage" src={image} alt="property" />
         </div>
+        <br />
+        <h4>{name.toUpperCase()}</h4>
+        <h4 className="secondaryText">****************</h4>
+        <h5 className="secondaryText">{description}</h5>
+      </button>
+      <div className="iconsContainer">
+        <div className="smIcon1">        </div>
+        <div className="smIcon2">        </div>
+        <div className="smIcon3">        </div>
       </div>
-    </button>
+      <br />
+      <br />
+    </div>
   );
 };
 
 PropertySquare.propTypes = {
   name: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
