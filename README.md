@@ -93,6 +93,14 @@ npm test
 
 <!-- AUTHORS -->
 
+## 👥 Authors <a id="authors"></a>
+
+👤 **Spencer Okyere**
+
+- GitHub: [@skabeo](https://github.com/skabeo)
+- Twitter: [@black_okyere](https://twitter.com/black_okyere)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/spencer-okyere)
+
 👤 **Abdel-Khafid SALAOU**
 
 - GitHub: [@githubhandle](https://github.com/adeola003)
@@ -110,10 +118,21 @@ npm test
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a id="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issue page](https://github.com/skabeo/frontend-capstone/issues)
+
+Feel free to check the [issues page](https://github.com/skabeo/frontend-capstone/issues).
+
+If you would like to contribute to this project, you can follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request back to the original repository.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -140,7 +159,7 @@ I also give thanks to [Murat Korkmaz on Behance](https://www.behance.net/gallery
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](https://github.com/skabeo/frontend-capstone/blob/develop/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
