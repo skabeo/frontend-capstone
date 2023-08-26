@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 import { refreshAccessToken } from '../../redux/sessions/sessionSlice';
+import Spinner from '../Spinner';
 
 const PersistLogin = () => {
   const dispatch = useDispatch();
@@ -24,7 +25,7 @@ const PersistLogin = () => {
 
   return (
     <>
-      {loading ? <p>Loading...</p> : <Outlet />}
+      {loading ? <Spinner /> : <Outlet />}
     </>
   );
 };

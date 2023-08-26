@@ -1,3 +1,68 @@
 .my-reservation-container {
-  border: 1px solid red;
+  padding: 10px 24px;
+}
+
+.my-reservation-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.my-reservation-cards {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.reservePagePropertiesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.margin-btm {
+  margin-bottom: 10px;
+}
+
+.my-reservation-description {
+  padding: 10px 15px;
+}
+
+.side-gap {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .my-reservation-container {
+    margin-left: 250px;
+  }
+
+  .reservePagePropertiesContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .my-reservation-cards {
+    display: flex;
+    transition: all 0.2s;
+  }
+
+  .my-reservation-cards:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  }
+
+  .my-reservation-img {
+    width: 320px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .my-reservation-container {
+    max-width: 600px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .my-reservation-img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+  }
 }
