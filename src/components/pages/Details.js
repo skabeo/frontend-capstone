@@ -13,7 +13,9 @@ const Details = () => {
         <img className="img-details" src={property.image} alt="property" />
       </div>
       <div className="details-cont">
+        <div className='cont-title'>
         <h2>{property.name}</h2>
+        </div>
         <ul>
           <li>
             Location:

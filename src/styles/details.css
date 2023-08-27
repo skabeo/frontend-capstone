@@ -17,6 +17,11 @@
   max-width: 90%;
 }
 
+.cont-title {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .details-cont ul {
   list-style: none;
   margin: 1rem;
