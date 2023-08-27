@@ -37,6 +37,7 @@ Select a theme for your website - is it going to be a website for booking doctor
   <summary>React</summary>
   <summary>Redux</summary>
   <summary>Postgres</summary>
+  <summary>Linters</summary>
 </details>
 
 ### Key Features <a name="key-features"></a>
