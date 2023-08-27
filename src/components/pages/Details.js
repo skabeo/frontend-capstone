@@ -1,5 +1,6 @@
 import { useLocation, Link } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io'
+import { CiLocationOn } from 'react-icons/ci'
 import '../../styles/details.css';
 
 const Details = () => {
@@ -17,13 +18,13 @@ const Details = () => {
         <h2>{property.name}</h2>
         </div>
         <ul>
-          <li>
-            Location:
-            {property.location}
+          <li className='details-card'>
+            <span><CiLocationOn/>Location</span>
+            <span>{property.location}</span>
           </li>
-          <li>
-            Price: $
-            {property.price}
+          <li className='details-card'>
+            Price
+            <span>$ {property.price}</span>
           </li>
         </ul>
         <button type="button" className="details-reserve">

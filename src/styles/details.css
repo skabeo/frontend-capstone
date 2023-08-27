@@ -27,6 +27,12 @@
   margin: 1rem;
 }
 
+.details-card { 
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
 .details-cont li {
   padding: 0.5rem;
 }
