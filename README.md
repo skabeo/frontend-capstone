@@ -125,6 +125,7 @@ npx stylelint "**/*.{css,scss}
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **Only admin can add and delete properties**
+- **User will need to confirm an email before logging in**
 - **Users will get confirmation emails after reserving a property**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
