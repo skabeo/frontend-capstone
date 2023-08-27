@@ -7,7 +7,11 @@ import { useNavigate } from 'react-router-dom';
 const Details = () => {
   const location = useLocation();
   const { property } = location.state;
- 
+  const navigate = useNavigate();
+
+  const handleBackButtonClick = () => {
+    navigate('/'); 
+  };
 
   return (
     <>
