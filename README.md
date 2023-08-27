@@ -115,7 +115,7 @@ npx stylelint "**/*.{css,scss}
 
 👤 **Brian Kimutai Yegon**
 
-
+- GitHub: [@yegonkimutai](https://github.com/yegonkimutai)
 
 
 <!-- FUTURE FEATURES -->
