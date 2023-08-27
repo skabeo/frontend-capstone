@@ -90,7 +90,12 @@ npm start
 ```
 npm test
 ```
-
+## Linters
+>To run linters
+```
+npx eslint "**/*.{js,jsx}
+npx stylelint "**/*.{css,scss}
+```
 
 <!-- AUTHORS -->
 
