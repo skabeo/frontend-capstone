@@ -54,5 +54,7 @@
 }
 
 @media (max-width: 1024px) {
-  
+  .details-main {
+    margin-left: 0%;
+  }
 }
