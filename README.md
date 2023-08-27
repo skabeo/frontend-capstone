@@ -50,8 +50,8 @@ Select a theme for your website - is it going to be a website for booking doctor
 - **User can add and delete properties**
 
 <!-- LIVE DEMO -->
-## [Live Demo](https://your-live-demo-link.com)
-## [Video Presentation](https://your-video-presentation-link.com)
+## [Live Demo]()
+## [Video Presentation]()
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
