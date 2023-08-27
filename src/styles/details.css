@@ -4,7 +4,7 @@
   grid-template-areas: 'img-cont details-cont';
   justify-content: center;
   margin-top: 10%;
-  margin-left: 22%;
+  margin-left: 14rem;
 }
 
 .img-cont {
@@ -57,12 +57,14 @@
   display: flex;
   justify-content: flex-end;
   background: linear-gradient(135deg, #af40ff, #5b42f3 100%, #00ddeb);
+  margin-top: 2rem;
   margin-left: 13rem;
   width: 8%;
   padding: 0.7rem;
   color: #fff;
   font-size: 1.5rem;
   border-radius: 25px 25px;
+  border: none;
 }
 
 @media (max-width: 1024px) {
