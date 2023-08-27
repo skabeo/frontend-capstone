@@ -1,4 +1,5 @@
 import { useLocation, Link } from 'react-router-dom';
+import { IoIosArrowBack } from 'react-icons/io'
 import '../../styles/details.css';
 
 const Details = () => {
