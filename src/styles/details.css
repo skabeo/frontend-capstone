@@ -59,7 +59,7 @@
   background: linear-gradient(135deg, #af40ff, #5b42f3 100%, #00ddeb);
   margin-top: 2rem;
   margin-left: 13rem;
-  width: 8%;
+  width: 10%;
   padding: 0.7rem;
   color: #fff;
   font-size: 1.5rem;
@@ -67,8 +67,38 @@
   border: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .details-main {
+    margin-left: 0%;
+  }
+
+  .return-btn {
+    margin-left: 2rem;
+    width: 15%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .details-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'img-cont'
+    'details-cont';
+  }
+
+  .img-cont img {
+    max-width: 100%;
+  }
+
+  .return-btn-cont {
+    display: flex;
+    justify-content: center;
+  }
+
+  .return-btn {
+    width: 6rem;
     margin-left: 0%;
   }
 }
