@@ -52,3 +52,7 @@
   background: linear-gradient(135deg, #af40ff, #5b42f3 100%, #00ddeb);
   border: none;
 }
+
+@media (max-width: 1024px) {
+  
+}
