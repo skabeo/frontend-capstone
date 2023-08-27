@@ -27,9 +27,11 @@ const Details = () => {
             <span>$ {property.price}</span>
           </li>
         </ul>
+        <div className='reserve-btn-cont'>
         <button type="button" className="details-reserve">
           <Link to="/reserve" state={property}>Reserve</Link>
         </button>
+        </div>
       </div>
     </div>
     <div>

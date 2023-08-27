@@ -31,9 +31,6 @@
   display: flex;
   justify-content: space-between;
   font-size: 1.1rem;
-}
-
-.details-cont li {
   padding: 0.5rem;
 }
 
@@ -41,6 +38,13 @@
   background-color: gray;
 }
 
+.reserve-btn-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
 .details-reserve {
   padding: 0.8rem;
+  width: 10rem;
 }
