@@ -10,6 +10,7 @@ const Details = () => {
     <div className="details-main">
       <div className="img-cont">
         <img className="img-details" src={property.image} alt="property" />
+        <button><IoIosArrowBack/></button>
       </div>
       <div className="details-cont">
         <h2>{property.name}</h2>
