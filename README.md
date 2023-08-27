@@ -127,6 +127,7 @@ npx stylelint "**/*.{css,scss}
 - **Only admin can add and delete properties**
 - **User will need to confirm an email before logging in**
 - **Users will get confirmation emails after reserving a property**
+- **Provide more information in properties details page**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
