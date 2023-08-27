@@ -28,7 +28,7 @@
   margin: 1rem;
 }
 
-.details-card { 
+.details-card {
   display: flex;
   justify-content: space-between;
   font-size: 1.1rem;
@@ -83,9 +83,9 @@
   .details-main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    'img-cont'
-    'details-cont';
+    grid-template-areas:
+      'img-cont'
+      'details-cont';
   }
 
   .img-cont img {
