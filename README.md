@@ -113,6 +113,10 @@ npx stylelint "**/*.{css,scss}
 - Twitter: [@twitterhandle](https://twitter.com/khadaf6)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdel-khafid-salaou)
 
+👤 **Brian Kimutai Yegon**
+
+
+
 
 <!-- FUTURE FEATURES -->
 
