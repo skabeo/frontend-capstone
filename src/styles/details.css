@@ -1,6 +1,6 @@
 .details-main {
   display: grid;
-  grid-template-columns: 50% 30%;
+  grid-template-columns: 50% 35%;
   grid-template-areas: 'img-cont details-cont';
   justify-content: center;
   margin-top: 10%;
@@ -20,6 +20,7 @@
 .cont-title {
   display: flex;
   justify-content: flex-end;
+  margin-right: 1rem;
 }
 
 .details-cont ul {
