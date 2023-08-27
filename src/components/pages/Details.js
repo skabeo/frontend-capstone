@@ -2,10 +2,12 @@ import { useLocation, Link } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io'
 import { CiLocationOn } from 'react-icons/ci'
 import '../../styles/details.css';
+import { useNavigate } from 'react-router-dom';
 
 const Details = () => {
   const location = useLocation();
   const { property } = location.state;
+ 
 
   return (
     <>
@@ -35,7 +37,7 @@ const Details = () => {
       </div>
     </div>
     <div className='return-btn-cont'>
-    <button type='button' className='return-btn'><IoIosArrowBack/></button>
+    <button type='button' className='return-btn' onClick={handleBackButtonClick}><IoIosArrowBack/></button>
     </div>
     </>
   );
