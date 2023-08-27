@@ -34,8 +34,8 @@ const Details = () => {
         </div>
       </div>
     </div>
-    <div>
-    <button><IoIosArrowBack/></button>
+    <div className='return-btn-cont'>
+    <button type='button' className='return-btn'><IoIosArrowBack/></button>
     </div>
     </>
   );
