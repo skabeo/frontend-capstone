@@ -13,6 +13,10 @@
   gap: 1rem;
 }
 
+.img-cont img {
+  max-width: 90%;
+}
+
 .details-cont ul {
   list-style: none;
   margin: 1rem;
