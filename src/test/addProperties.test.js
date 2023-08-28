@@ -15,7 +15,7 @@ it('renders Property form correctly', () => {
     </Router>,
   );
 
-  expect(screen.getByText('Form that allows users to add a property')).toBeInTheDocument();
+  expect(screen.getByText('Add property')).toBeInTheDocument();
   expect(screen.getByText('Name:')).toBeInTheDocument();
   expect(screen.getByText('Image URL:')).toBeInTheDocument();
   expect(screen.getByText('Location:')).toBeInTheDocument();
