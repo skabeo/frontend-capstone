@@ -1,70 +1,184 @@
-# Getting Started with Create React App
+<div align="center">
+  <h3><b>Property Rental App</b></h3>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📗 Table of Contents
 
-## Available Scripts
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 About the Project](#-about-the-project)
+  - [🛠 Built With](#-built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [💻 Getting Started](#-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+  - [🔭 Future Features](#-future-features)
+  - [🤝 Contributing](#-contributing)
+  - [⭐️ Show your Support](#-show-your-support)
+  - [🙏 Acknowledgments](#-acknowledgments)
+  - [📝 License](#-license)
 
-In the project directory, you can run:
+# 📖 About the Project <a name="about-project"></a>
 
-### `npm start`
+**Property Rental App** is a web application designed to facilitate the booking of appointments to view and rent properties. The project follows a provided design and layout but adapts the content to offer a platform for reserving appointments with properties for rent.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Select a theme for your website - is it going to be a website for booking doctor appointments, booking online classes, or something else?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm test`
+### Tech Stack <a name="tech-stack"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+  <summary>HTML</summary>
+  <summary>CSS</summary>
+  <summary>JavaScript</summary>
+  <summary>Ruby on Rails</summary>
+  <summary>React</summary>
+  <summary>Redux</summary>
+  <summary>Postgres</summary>
+  <summary>Linters</summary>
+</details>
 
-### `npm run build`
+### Key Features <a name="key-features"></a>
+- **Responsive design**
+- **User authentication with username and password**
+- **User can view list of properties for rent**
+- **User can view details of a specific property**
+- **User can reserve an appointment to view a property**
+- **User can view their reservations**
+- **User can add and delete properties**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- LIVE DEMO -->
+## [Live Demo]()
+## [Video Presentation]()
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💻 Getting Started <a name="getting-started"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running, follow these steps.
 
-### `npm run eject`
+### Prerequisites
+In order to run this project, you need:
+- To have the teck stack mentioned [above](#tech-stack);
+- To have the following repositories and follow the instructions in the respective README docs:
+    - [Front end](https://github.com/skabeo/frontend-capstone);
+    - [Back end](https://github.com/skabeo/backend_capstone)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Setup
+Clone this repository to your desired folder:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+git clone https://github.com/skabeo/frontend-capstone.git
+cd frontend-capstone
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Install frontend dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Add your personal keys
+Navigate to ```src/api/sessionAPI.js``` and add your personal keys variables from the rails app as follow:
+```sh
+- const CLIENT_ID = 'your client id';
+- const CLIENT_SECRET = 'your client secret';
+```
 
-## Learn More
+## Start React development server
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Jest
+> To run testing
+```
+npm test
+```
+## Linters
+>To run linters
+```
+npx eslint "**/*.{js,jsx}
+npx stylelint "**/*.{css,scss}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- AUTHORS -->
 
-### Code Splitting
+## 👥 Authors <a id="authors"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👤 **Spencer Okyere**
 
-### Analyzing the Bundle Size
+- GitHub: [@skabeo](https://github.com/skabeo)
+- Twitter: [@black_okyere](https://twitter.com/black_okyere)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/spencer-okyere)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👤 **Abdel-Khafid SALAOU**
 
-### Making a Progressive Web App
+- GitHub: [@githubhandle](https://github.com/adeola003)
+- Twitter: [@twitterhandle](https://twitter.com/khadaf6)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdel-khafid-salaou)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👤 **Brian Kimutai Yegon**
 
-### Advanced Configuration
+- GitHub: [@yegonkimutai](https://github.com/yegonkimutai)
+- Twitter: [@yegonbrian8](https://twitter.com/yegonbrian8)
+- LinkedIn: [Brian Yegon](https://www.linkedin.com/in/brian-yegon-0717a1241/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+👤 **Juan Diaz**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- GitHub: [@juanmanuelbyc](https://github.com/juanmanuelbyc)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Only admin can add and delete properties**
+- **User will need to confirm an email before logging in**
+- **Users will get confirmation emails after reserving a property**
+- **Provide more information in properties details page**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a id="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/skabeo/frontend-capstone/issues).
+
+If you would like to contribute to this project, you can follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request back to the original repository.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+
+If you like this repo dont forget to give it a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank the Microverse community and the partners.
+I also give thanks to [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign/modules/173005579?log_shim_removal=1), the author of original design we got inspiration from.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/skabeo/frontend-capstone/blob/develop/LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+

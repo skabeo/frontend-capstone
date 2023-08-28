@@ -6,7 +6,7 @@ import Spinner from '../Spinner';
 
 const PersistLogin = () => {
   const dispatch = useDispatch();
-  const loading = useSelector((state) => state.session.isLoading);
+  const loading = useSelector((state) => state.session.loading);
   const accessToken = useSelector((state) => state.session.accessToken);
   const refreshToken = useSelector((state) => state.session.refreshToken);
 
