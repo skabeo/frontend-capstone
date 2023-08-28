@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
 import { createReservation } from '../../redux/reservations/reserveSlice';
+import { IoIosArrowBack } from 'react-icons/io';
 import '../../styles/reservation.css';
 
 const ReserveForm = () => {
@@ -14,6 +15,7 @@ const ReserveForm = () => {
   const location = useLocation();
   const { state } = location;
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   useEffect(() => {
     dispatch(fetchPortfolio());
@@ -50,6 +52,7 @@ const ReserveForm = () => {
     setPropertyId('');
   };
 
+ 
   return (
     <div className="reserve-form-container">
       <div className="reserve-form-overlay">
@@ -91,6 +94,12 @@ const ReserveForm = () => {
               Reserve
             </button>
           </form>
+        </div>
+        <div className="">
+        <button type="button" className="">
+          <IoIosArrowBack />
+          {' '}
+        </button>
         </div>
       </div>
     </div>

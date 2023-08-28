@@ -39,9 +39,11 @@ const Details = () => {
             </li>
           </ul>
           <div className="reserve-btn-cont">
+          <Link to="/reserve" state={property}>
             <button type="button" className="details-reserve">
-              <Link to="/reserve" state={property}>Reserve</Link>
+              Reserve
             </button>
+            </Link>
           </div>
         </div>
       </div>
