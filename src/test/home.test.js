@@ -15,7 +15,7 @@ describe('Currencies content', () => {
         </Provider>
       </Router>,
     );
-    const pageTitle = screen.getByText('Home Page');
+    const pageTitle = screen.getByText('LATEST PROPERTIES');
     expect(pageTitle).toBeInTheDocument();
   });
 });
