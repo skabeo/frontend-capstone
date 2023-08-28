@@ -101,7 +101,7 @@ export const refreshAccessToken = createAsyncThunk(
   },
 );
 
-function storeRefreshToken(token) {
+const storeRefreshToken = token => {
   localStorage.setItem('refreshToken', token);
 }
 
