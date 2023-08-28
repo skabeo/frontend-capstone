@@ -52,6 +52,13 @@ const ReserveForm = () => {
     setPropertyId('');
   };
 
+  const handleBack = () => {
+    if (state && state.id) {
+      navigate(-1);
+    } else {
+      navigate('/');
+    }
+  };
  
   return (
     <div className="reserve-form-container">
@@ -96,7 +103,7 @@ const ReserveForm = () => {
           </form>
         </div>
         <div className="">
-        <button type="button" className="">
+        <button type="button" className="" onClick={handleBack}>
           <IoIosArrowBack />
           {' '}
         </button>
