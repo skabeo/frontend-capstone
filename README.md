@@ -51,7 +51,8 @@ Select a theme for your website - is it going to be a website for booking doctor
 
 <!-- LIVE DEMO -->
 ## [Live Demo]()
-## [Video Presentation]()
+
+A live demo link would be up soon
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -96,6 +97,10 @@ npm test
 npx eslint "**/*.{js,jsx}
 npx stylelint "**/*.{css,scss}
 ```
+
+## Backend pull request
+
+You can find the link to the frontend pull request [here](https://github.com/skabeo/backend_capstone/pull/35)
 
 <!-- AUTHORS -->
 
