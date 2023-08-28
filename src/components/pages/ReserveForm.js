@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
 import { createReservation } from '../../redux/reservations/reserveSlice';
-import { IoIosArrowBack } from 'react-icons/io';
+import { BsArrowLeft } from 'react-icons/bs';
 import '../../styles/reservation.css';
 
 const ReserveForm = () => {
@@ -64,6 +64,10 @@ const ReserveForm = () => {
     <div className="reserve-form-container">
       <div className="reserve-form-overlay">
         <div className="reserve-desktop-sizing">
+        <button type="button" className="reserve-back-btn" onClick={handleBack}>
+          <BsArrowLeft />
+          {' '}
+        </button>
           <h3 className="center-text reserve-form-title">Reserve Form</h3>
           {feedbackMessage && <p className="success-flash">{feedbackMessage}</p>}
           <form className="form-container small-gap">
@@ -101,12 +105,6 @@ const ReserveForm = () => {
               Reserve
             </button>
           </form>
-        </div>
-        <div className="">
-        <button type="button" className="" onClick={handleBack}>
-          <IoIosArrowBack />
-          {' '}
-        </button>
         </div>
       </div>
     </div>
