@@ -15,6 +15,14 @@
   background-color: rgba(157, 77, 192, 0.7);
 }
 
+.reserve-back-btn {
+  background: transparent;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
 .reserve-form-title {
   color: white;
 }

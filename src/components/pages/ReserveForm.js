@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { BsArrowLeft } from 'react-icons/bs';
 import { fetchPortfolio } from '../../redux/properties/propertiesSlice';
 import { createReservation } from '../../redux/reservations/reserveSlice';
 import '../../styles/reservation.css';
@@ -14,6 +15,7 @@ const ReserveForm = () => {
   const location = useLocation();
   const { state } = location;
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(fetchPortfolio());
@@ -50,10 +52,22 @@ const ReserveForm = () => {
     setPropertyId('');
   };
 
+  const handleBack = () => {
+    if (state && state.id) {
+      navigate(-1);
+    } else {
+      navigate('/');
+    }
+  };
+
   return (
     <div className="reserve-form-container">
       <div className="reserve-form-overlay">
         <div className="reserve-desktop-sizing">
+          <button type="button" className="reserve-back-btn" onClick={handleBack}>
+            <BsArrowLeft />
+            {' '}
+          </button>
           <h3 className="center-text reserve-form-title">Reserve Form</h3>
           {feedbackMessage && <p className="success-flash">{feedbackMessage}</p>}
           <form className="form-container small-gap">
