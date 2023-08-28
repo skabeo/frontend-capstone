@@ -7,7 +7,7 @@ import {
   logoutUserWithToken,
 } from '../../api/sessionAPI';
 
-function getRefreshToken() {
+const getRefreshToken = () => {
   return localStorage.getItem('refreshToken');
 }
 
