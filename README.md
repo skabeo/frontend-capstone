@@ -183,7 +183,7 @@ I also give thanks to [Murat Korkmaz on Behance](https://www.behance.net/gallery
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/skabeo/frontend-capstone/blob/develop/LICENSE) licensed.
+This project is [MIT](https://github.com/skabeo/frontend-capstone/blob/develop/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
