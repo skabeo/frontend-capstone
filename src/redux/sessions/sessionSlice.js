@@ -9,7 +9,7 @@ import {
 
 const getRefreshToken = () => {
   return localStorage.getItem('refreshToken');
-}
+};
 
 const initialState = {
   currentUser: {
@@ -101,13 +101,9 @@ export const refreshAccessToken = createAsyncThunk(
   },
 );
 
-const storeRefreshToken = token => {
-  localStorage.setItem('refreshToken', token);
-}
+const storeRefreshToken = (token) => localStorage.setItem('refreshToken', token);
 
-function removeRefreshToken() {
-  localStorage.removeItem('refreshToken');
-}
+const removeRefreshToken = () => localStorage.removeItem('refreshToken');
 
 export const sessionSlice = createSlice({
   name: 'session',

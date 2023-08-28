@@ -17,7 +17,7 @@ const PersistLogin = () => {
       } catch (error) {
         console.log(error);
       }
-    }
+    };
     if (!accessToken) {
       verifyRefreshToken();
     }

@@ -72,7 +72,7 @@ export const requestAccessTokenWithRefreshToken = async (refreshToken) => {
   }
 };
 
-export const getCurrentUser = async accessToken => {
+export const getCurrentUser = async (accessToken) => {
   const config = {
     headers: {
       Authorization: `Bearer ${accessToken}`,
@@ -85,4 +85,4 @@ export const getCurrentUser = async accessToken => {
   } catch (error) {
     return error.response.data;
   }
-}
+};
