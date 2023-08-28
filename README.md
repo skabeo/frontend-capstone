@@ -120,6 +120,11 @@ npx stylelint "**/*.{css,scss}
 - LinkedIn: [Brian Yegon](https://www.linkedin.com/in/brian-yegon-0717a1241/)
 
 
+👤 **Juan Diaz**
+
+- GitHub: [@juanmanuelbyc](https://github.com/juanmanuelbyc)
+
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
