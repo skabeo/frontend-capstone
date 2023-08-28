@@ -51,6 +51,7 @@
   border-radius: 25px 25px;
   background: linear-gradient(135deg, #af40ff, #5b42f3 100%, #00ddeb);
   border: none;
+  color: #fff;
 }
 
 .return-btn {
