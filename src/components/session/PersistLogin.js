@@ -11,7 +11,7 @@ const PersistLogin = () => {
   const refreshToken = useSelector((state) => state.session.refreshToken);
 
   useEffect(() => {
-    function verifyRefreshToken() {
+    const verifyRefreshToken = () => {
       try {
         dispatch(refreshAccessToken(refreshToken));
       } catch (error) {
