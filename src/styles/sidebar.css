@@ -1,0 +1,79 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  border-right: 1px rgba(128, 128, 128, 0.3) solid;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-links-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app-links {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.app-links a {
+  padding: 5px 15px;
+}
+
+.app-links a:hover {
+  outline: 1px solid #612ace;
+  border-radius: 5px;
+}
+
+.active {
+  background: linear-gradient(135deg, #af40ff, #5b42f3 100%, #00ddeb);
+  border-radius: 5px;
+  color: white;
+}
+
+.session-btn {
+  background-color: rgb(226, 226, 226);
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+}
+
+.session-btn:hover {
+  opacity: 0.7;
+}
+
+.sidebar-logo-line {
+  margin-top: 5px;
+}
+
+.sidebar-username {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.sidebar-name {
+  margin-left: 5px;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  /* Your CSS styles for small screens */
+  .large-screens {
+    display: none;
+  }
+}

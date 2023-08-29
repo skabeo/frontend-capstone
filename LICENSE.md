@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Spencer Okyere
+Copyright (c) 2023 Abdel-Khafid kolawole Fifa SALAOU
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
