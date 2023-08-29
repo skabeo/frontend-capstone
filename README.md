@@ -9,6 +9,7 @@
   - [🛠 Built With](#-built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Kanban board](#kanban)
   - [💻 Getting Started](#-getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -48,6 +49,13 @@ Select a theme for your website - is it going to be a website for booking doctor
 - **User can reserve an appointment to view a property**
 - **User can view their reservations**
 - **User can add and delete properties**
+
+
+### Kanban board <a name="kanban"></a>
+- [Initial Kanban board](https://drive.google.com/file/d/1hJgmAWl-mUl1zgM45DEVGh6qIaqrTBKk/view?usp=sharing);
+- [Kanban board after project completion](https://github.com/skabeo/backend_capstone/projects/1)
+
+Note: The project has been completed by a team of **four** [members](#authors).
 
 <!-- LIVE DEMO -->
 ## [Live Demo]()
