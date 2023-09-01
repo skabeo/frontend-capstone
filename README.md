@@ -182,6 +182,8 @@ If you like this repo dont forget to give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+We would like acknowledge [yi YIZHUANG](https://github.com/YIZHUANG/) for using his version of [react-multi-carousel](https://github.com/YIZHUANG/react-multi-carousel) for our home page carousel display of properties.
+
 I would like to thank the Microverse community and the partners.
 I also give thanks to [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign/modules/173005579?log_shim_removal=1), the author of original design we got inspiration from.
 
