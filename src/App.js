@@ -15,7 +15,7 @@ import Sidebar from './components/Sidebar';
 import Details from './components/pages/Details';
 import ReserveForm from './components/pages/ReserveForm';
 
-const App = () => {
+const App = () => (
   <div className="App">
     <Sidebar />
     <div className="main-content">
@@ -96,7 +96,7 @@ const App = () => {
         </Route>
       </Routes>
     </div>
-  </div>;
-};
+  </div>
+);
 
 export default App;
